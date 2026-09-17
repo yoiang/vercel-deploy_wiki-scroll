@@ -1,0 +1,42 @@
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: rgb(0 0 0 / 45%);
+}
+
+.panel {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 21;
+  width: min(17rem, 80vw);
+  padding: 1rem 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  animation: slide-in 160ms ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  padding: 0 1.25rem;
+  font-size: 1.1rem;
+}
+
+.item {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  text-align: left;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.item:active {
+  background: var(--border);
+}

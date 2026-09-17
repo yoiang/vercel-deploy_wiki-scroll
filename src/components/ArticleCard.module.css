@@ -1,0 +1,76 @@
+.card {
+  display: block;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.headerTitle {
+  font-weight: 600;
+  font-size: 0.95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.timestamp {
+  flex: none;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: var(--border);
+}
+
+.caption {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.captionTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/*
+ * Exactly four lines, with "… read more" pinned to the end of the fourth.
+ * line-clamp cannot append text at the truncation point, so the affordance is
+ * positioned over a short gradient that fades out the clipped text beneath it.
+ */
+.summary {
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  max-height: calc(4 * 1.45 * 0.9rem);
+  color: var(--text);
+}
+
+.readMore {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-left: 2.5rem;
+  color: var(--muted);
+  background: linear-gradient(to right, transparent, var(--surface) 2rem);
+}

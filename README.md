@@ -1,28 +1,52 @@
-## Usage
+# Wiki Scroll
+
+An infinite, Instagram-style scroll of recently-updated wiki articles.
+
+## Running
 
 ```bash
-$ npm install # or pnpm install or yarn install
+npm install
+npm run dev      # dev server
+npm test         # unit tests
+npm run build    # production build
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## Architecture
 
-## Available Scripts
+All wiki-specific knowledge lives behind the `WikiSource` interface in
+`src/wiki/types.ts`. `src/wiki/mediawiki.ts` is the only file that imports
+`m3api`; everything above it speaks in `FeedItem` and `ArticleContent`.
 
-In the project directory, you can run:
+- **Point at a different MediaWiki wiki** — add an entry to
+  `src/wiki/registry.ts`.
+- **Support a non-MediaWiki wiki** — write a class implementing `WikiSource`.
+- **Change which articles appear** — implement a `FeedPolicy` in
+  `src/feed/policy.ts`. The V1 default, `requireImage`, hides the roughly half
+  of recently-edited articles that have no thumbnail.
 
-### `npm run dev`
+The design document is at
+`docs/superpowers/specs/2026-09-17-wiki-scroll-design.md`, and the
+implementation plan at `docs/superpowers/plans/2026-09-17-wiki-scroll.md`.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+`src/wiki/live-check.test.ts` is a skipped integration test that hits the real
+Wikipedia API. Un-skip it to verify the network path after changing sources.
 
-### `npm run build`
+## Before distributing this app
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+`src/wiki/registry.ts` sets the API User-Agent to the placeholder
+`wiki-scroll/0.1`. [Wikimedia's User-Agent policy][ua] asks for an identifying
+string with contact information. Replace it before shipping:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```ts
+userAgent: 'wiki-scroll/1.0 (https://example.org/wiki-scroll; you@example.org)',
+```
 
-## Deployment
+[ua]: https://foundation.wikimedia.org/wiki/Policy:Wikimedia_Foundation_User-Agent_Policy
 
-Learn more about deploying your application with the [documentations](https://vite.dev/guide/static-deploy.html)
+## Note on `mwn`
+
+`mwn` was the originally intended API library but cannot be used: it is a
+Node-only bot framework (`engines: node >=14`, depending on `tough-cookie`,
+`form-data` and `chalk`) and browsers forbid setting the headers it relies on.
+`m3api` is used instead — it ships a dependency-free browser entry point and
+its `requestAndContinue()` generator maps directly onto infinite scroll.

@@ -1,0 +1,13 @@
+.status {
+  padding: 3rem 1.25rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.retry {
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+}
