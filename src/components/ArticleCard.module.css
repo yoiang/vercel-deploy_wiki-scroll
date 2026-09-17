@@ -29,12 +29,20 @@
   color: var(--muted);
 }
 
+/*
+ * Fit the whole image rather than cropping it. The aspect ratio is set inline
+ * per image, from the width/height the API already gives us, so the card
+ * reserves the correct space before the image loads — without that the feed
+ * would jump under the reader's thumb on every load and disturb scroll
+ * restoration. max-height keeps very tall portraits from filling the screen.
+ */
 .image {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  background: var(--border);
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  background: var(--bg);
 }
 
 .caption {

@@ -52,9 +52,12 @@ describe('app shell rendering', () => {
     expect(host.textContent).toContain('Apple II (original)')
     expect(host.textContent).toContain('5 minutes ago')
     expect(host.textContent).toContain('… read more')
-    expect(host.querySelector('img')?.getAttribute('src')).toBe(
-      'https://upload.wikimedia.org/a.jpg',
-    )
+    const img = host.querySelector('img')
+    expect(img?.getAttribute('src')).toBe('https://upload.wikimedia.org/a.jpg')
+    // Reserves space before the image loads, so the feed does not jump under
+    // the reader while scrolling.
+    expect(img?.getAttribute('style')).toContain('aspect-ratio')
+    expect(img?.getAttribute('width')).toBe('800')
     dispose()
   })
 

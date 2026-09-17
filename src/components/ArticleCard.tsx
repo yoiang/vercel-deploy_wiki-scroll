@@ -29,7 +29,16 @@ export default function ArticleCard(props: ArticleCardProps) {
 
         <Show when={props.item.image}>
           {(image) => (
-            <img class={styles.image} src={image().url} alt="" loading="lazy" decoding="async" />
+            <img
+              class={styles.image}
+              src={image().url}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={image().width}
+              height={image().height}
+              style={{ 'aspect-ratio': `${image().width} / ${image().height}` }}
+            />
           )}
         </Show>
 
