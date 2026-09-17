@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">wiki-scroll</string>
+    <string name="title_activity_main">wiki-scroll</string>
+    <string name="package_name">com.adorkable.wikiscroll</string>
+    <string name="custom_url_scheme">com.adorkable.wikiscroll</string>
+</resources>
