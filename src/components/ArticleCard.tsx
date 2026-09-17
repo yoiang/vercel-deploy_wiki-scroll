@@ -1,6 +1,7 @@
 import { Show } from 'solid-js'
 import { useNavigate } from '@solidjs/router'
 import { formatRelativeTime } from '../lib/formatRelativeTime.ts'
+import { parseSiteId } from '../wiki/catalogue.ts'
 import type { FeedItem } from '../wiki/types.ts'
 import styles from './ArticleCard.module.css'
 
@@ -8,13 +9,24 @@ interface ArticleCardProps {
   item: FeedItem
 }
 
+/**
+ * FeedItem.id is `${familyId}:${lang}:${pageId}`, so the site id is everything
+ * before the final colon. The title is encoded because titles may contain
+ * slashes, which would otherwise produce a broken four-segment URL.
+ */
+export function articleHref(item: FeedItem): string {
+  const lastColon = item.id.lastIndexOf(':')
+  const parsed = parseSiteId(item.id.slice(0, lastColon))
+  if (!parsed) return '/'
+
+  return `/article/${parsed.familyId}/${parsed.lang}/${encodeURIComponent(item.title)}`
+}
+
 export default function ArticleCard(props: ArticleCardProps) {
   const navigate = useNavigate()
 
   function open() {
-    navigate(`/article/${encodeURIComponent(props.item.title)}`, {
-      state: { pageId: props.item.pageId },
-    })
+    navigate(articleHref(props.item), { state: { pageId: props.item.pageId } })
   }
 
   return (

@@ -1,0 +1,201 @@
+<style>
+  .phones { display: flex; gap: 14px; flex-wrap: wrap; }
+  .phone {
+    flex: 1 1 210px; min-width: 200px;
+    border: 1px solid rgba(128,128,128,.35);
+    border-radius: 12px; overflow: hidden;
+    background: rgba(128,128,128,.04);
+    font-size: 12px; line-height: 1.45;
+  }
+  .pbar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px; font-weight: 600;
+    border-bottom: 1px solid rgba(128,128,128,.35);
+    background: rgba(128,128,128,.10);
+  }
+  .pbody { padding: 9px 10px; }
+  .tabs { display: flex; border-bottom: 1px solid rgba(128,128,128,.35); }
+  .tab { flex: 1; text-align: center; padding: 7px 0; opacity: .55; }
+  .tab.on { opacity: 1; font-weight: 600; box-shadow: inset 0 -2px 0 currentColor; }
+  .srch {
+    border: 1px solid rgba(128,128,128,.4); border-radius: 999px;
+    padding: 5px 10px; margin-bottom: 9px; opacity: .7;
+  }
+  .wcard {
+    border: 1px solid rgba(128,128,128,.35); border-radius: 9px;
+    padding: 8px 9px; margin-bottom: 8px; background: rgba(128,128,128,.06);
+  }
+  .wtitle { font-weight: 600; display: flex; justify-content: space-between; align-items: center; }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+  .chip {
+    border: 1px solid rgba(128,128,128,.4); border-radius: 999px;
+    padding: 1px 7px; font-size: 11px; background: rgba(128,128,128,.10);
+  }
+  .row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 2px; border-bottom: 1px solid rgba(128,128,128,.22);
+  }
+  .muted { opacity: .58; font-size: 11px; }
+  .lbl {
+    font-size: 10px; letter-spacing: .09em; text-transform: uppercase;
+    opacity: .55; margin: 10px 0 6px; font-weight: 600;
+  }
+  .lbl:first-child { margin-top: 0; }
+  .arrow { text-align: center; align-self: center; opacity: .5; font-size: 18px; padding: 0 2px; }
+  .flow { display: flex; gap: 6px; align-items: stretch; }
+  .note { margin-top: 10px; font-size: 12.5px; opacity: .8; }
+</style>
+
+<h2>How should browsing and following wikis be laid out?</h2>
+<p class="subtitle">
+  All three cover your three requirements — searchable catalogue, per-wiki language
+  selection, and a separate "following" list that bundles each wiki with its languages.
+  They differ in how much is on screen at once.
+</p>
+
+<div class="cards">
+
+  <!-- ============ OPTION A ============ -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:12px">
+      <div class="flow">
+        <div class="phone">
+          <div class="pbar">← Wikis</div>
+          <div class="tabs"><div class="tab on">Following</div><div class="tab">Browse</div></div>
+          <div class="pbody">
+            <div class="wcard">
+              <div class="wtitle"><span>Wikipedia</span><span class="muted">▾</span></div>
+              <div class="chips">
+                <span class="chip">English ×</span><span class="chip">日本語 ×</span>
+                <span class="chip">Deutsch ×</span><span class="chip">+ add</span>
+              </div>
+            </div>
+            <div class="wcard">
+              <div class="wtitle"><span>Wiktionary</span><span class="muted">▾</span></div>
+              <div class="chips"><span class="chip">Français ×</span><span class="chip">+ add</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow">⇄</div>
+        <div class="phone">
+          <div class="pbar">← Wikis</div>
+          <div class="tabs"><div class="tab">Following</div><div class="tab on">Browse</div></div>
+          <div class="pbody">
+            <div class="srch">🔍 Search wikis…</div>
+            <div class="row"><span>Wikipedia</span><span class="muted">348 langs ›</span></div>
+            <div class="row"><span>Wiktionary</span><span class="muted">190 langs ›</span></div>
+            <div class="row"><span>Wikivoyage</span><span class="muted">25 langs ›</span></div>
+            <div class="row"><span>Wikiquote</span><span class="muted">89 langs ›</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A · Two tabs</h3>
+      <p>
+        <strong>Following</strong> and <strong>Browse</strong> as tabs on one screen.
+        Following shows each wiki as a card with its languages as removable chips.
+        Clear separation, one tap to swap views, and the two lists never compete for space.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============ OPTION B ============ -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:12px">
+      <div class="flow">
+        <div class="phone">
+          <div class="pbar">← Wikis</div>
+          <div class="pbody">
+            <div class="lbl">Following · 2</div>
+            <div class="wcard">
+              <div class="wtitle"><span>Wikipedia</span><span class="muted">3 ▾</span></div>
+              <div class="chips">
+                <span class="chip">English</span><span class="chip">日本語</span><span class="chip">Deutsch</span>
+              </div>
+            </div>
+            <div class="wcard">
+              <div class="wtitle"><span>Wiktionary</span><span class="muted">1 ▾</span></div>
+              <div class="chips"><span class="chip">Français</span></div>
+            </div>
+            <div class="lbl">Add a wiki</div>
+            <div class="srch">🔍 Search wikis…</div>
+            <div class="row"><span>Wikivoyage</span><span class="muted">+</span></div>
+            <div class="row"><span>Wikiquote</span><span class="muted">+</span></div>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="phone">
+          <div class="pbar">← Wikipedia</div>
+          <div class="pbody">
+            <div class="srch">🔍 Filter 348 languages…</div>
+            <div class="row"><span>☑ English</span><span class="muted">en</span></div>
+            <div class="row"><span>☑ 日本語 · Japanese</span><span class="muted">ja</span></div>
+            <div class="row"><span>☑ Deutsch · German</span><span class="muted">de</span></div>
+            <div class="row"><span>☐ Español · Spanish</span><span class="muted">es</span></div>
+            <div class="row"><span>☐ Français · French</span><span class="muted">fr</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B · One page, two sections</h3>
+      <p>
+        Following at the top, catalogue below it on the same scroll. Everything visible
+        without switching views, and adding is always one scroll away — but the page gets
+        long once you follow several wikis.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============ OPTION C ============ -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:12px">
+      <div class="flow">
+        <div class="phone">
+          <div class="pbar">← Wikis <span class="muted" style="margin-left:auto">+</span></div>
+          <div class="pbody">
+            <div class="wcard">
+              <div class="wtitle"><span>Wikipedia</span><span class="muted">›</span></div>
+              <div class="muted" style="margin-top:3px">English, 日本語, Deutsch</div>
+            </div>
+            <div class="wcard">
+              <div class="wtitle"><span>Wiktionary</span><span class="muted">›</span></div>
+              <div class="muted" style="margin-top:3px">Français</div>
+            </div>
+            <div class="muted" style="text-align:center;margin-top:14px">
+              Tap + to add a wiki
+            </div>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="phone">
+          <div class="pbar">← Add wiki</div>
+          <div class="pbody">
+            <div class="srch">🔍 Search wikis…</div>
+            <div class="row"><span>Wikipedia</span><span class="muted">✓</span></div>
+            <div class="row"><span>Wiktionary</span><span class="muted">✓</span></div>
+            <div class="row"><span>Wikivoyage</span><span class="muted">›</span></div>
+            <div class="row"><span>Wikiquote</span><span class="muted">›</span></div>
+            <div class="row"><span>Wikibooks</span><span class="muted">›</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C · Drill-down</h3>
+      <p>
+        The screen you land on is only what you follow — compact and calm. Browsing is a
+        separate screen behind <strong>+</strong>, and languages a screen behind that.
+        Scales to any catalogue size, at the cost of one more tap to add.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<p class="note">
+  <strong>Common to all three:</strong> search matches both the autonym and the English name,
+  so "Japanese" and "日本語" both find <code>ja</code>. Following a wiki with no languages
+  chosen is treated as not following it. Changing the selection resets the feed.
+</p>

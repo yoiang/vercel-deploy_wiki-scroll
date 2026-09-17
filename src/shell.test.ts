@@ -5,6 +5,7 @@ import SettingsRoute from './routes/SettingsRoute.tsx'
 import ArticleCard from './components/ArticleCard.tsx'
 import Drawer from './components/Drawer.tsx'
 import type { FeedItem } from './wiki/types.ts'
+import { articleHref } from './components/ArticleCard.tsx'
 
 /**
  * Proves the shell actually mounts in a DOM, catching runtime errors the type
@@ -24,7 +25,9 @@ describe('app shell rendering', () => {
 
     expect(host.querySelector('h1')?.textContent).toBe('Settings')
     expect(host.querySelector('button[aria-label="Go back"]')).not.toBeNull()
-    expect(host.textContent).toContain('No settings yet.')
+    // The Wikis row summarises the follow count and links to the wikis screen.
+    expect(host.textContent).toContain('Wikis')
+    expect(host.querySelector('a[href="/settings/wikis"]')).not.toBeNull()
     dispose()
   })
 
@@ -79,5 +82,31 @@ describe('app shell rendering', () => {
     expect(host.querySelector('nav[aria-label="Main menu"]')).not.toBeNull()
     expect(host.textContent).toContain('Settings')
     dispose()
+  })
+})
+
+describe('articleHref', () => {
+  it('builds a three-segment route from the item id', () => {
+    expect(
+      articleHref({
+        id: 'wikipedia:ja:1',
+        pageId: 1,
+        title: '猫',
+        updatedAt: new Date(),
+        summary: '',
+      }),
+    ).toBe('/article/wikipedia/ja/%E7%8C%AB')
+  })
+
+  it('encodes titles containing slashes', () => {
+    expect(
+      articleHref({
+        id: 'wikibooks:en:2',
+        pageId: 2,
+        title: 'Cookbook/Rice',
+        updatedAt: new Date(),
+        summary: '',
+      }),
+    ).toBe('/article/wikibooks/en/Cookbook%2FRice')
   })
 })

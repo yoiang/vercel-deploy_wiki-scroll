@@ -1,0 +1,4908 @@
+{
+  "families": [
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "type": "mediawiki",
+      "capabilities": {
+        "extracts": true,
+        "pageImages": true
+      },
+      "generatedFrom": {
+        "sitematrix": "wiki"
+      },
+      "sites": [
+        {
+          "lang": "ab",
+          "name": "аԥсшәа",
+          "english": "Abkhazian",
+          "domain": "ab.wikipedia.org"
+        },
+        {
+          "lang": "ace",
+          "name": "Acèh",
+          "english": "Acehnese",
+          "domain": "ace.wikipedia.org"
+        },
+        {
+          "lang": "ady",
+          "name": "адыгабзэ",
+          "english": "Adyghe",
+          "domain": "ady.wikipedia.org"
+        },
+        {
+          "lang": "af",
+          "name": "Afrikaans",
+          "english": "Afrikaans",
+          "domain": "af.wikipedia.org"
+        },
+        {
+          "lang": "alt",
+          "name": "алтай тил",
+          "english": "Southern Altai",
+          "domain": "alt.wikipedia.org"
+        },
+        {
+          "lang": "am",
+          "name": "አማርኛ",
+          "english": "Amharic",
+          "domain": "am.wikipedia.org"
+        },
+        {
+          "lang": "ami",
+          "name": "Pangcah",
+          "english": "Amis",
+          "domain": "ami.wikipedia.org"
+        },
+        {
+          "lang": "an",
+          "name": "aragonés",
+          "english": "Aragonese",
+          "domain": "an.wikipedia.org"
+        },
+        {
+          "lang": "ang",
+          "name": "Ænglisc",
+          "english": "Old English",
+          "domain": "ang.wikipedia.org"
+        },
+        {
+          "lang": "ann",
+          "name": "Obolo",
+          "english": "Obolo",
+          "domain": "ann.wikipedia.org"
+        },
+        {
+          "lang": "anp",
+          "name": "अंगिका",
+          "english": "Angika",
+          "domain": "anp.wikipedia.org"
+        },
+        {
+          "lang": "ar",
+          "name": "العربية",
+          "english": "Arabic",
+          "domain": "ar.wikipedia.org"
+        },
+        {
+          "lang": "arc",
+          "name": "ܐܪܡܝܐ",
+          "english": "Aramaic",
+          "domain": "arc.wikipedia.org"
+        },
+        {
+          "lang": "ary",
+          "name": "الدارجة",
+          "english": "Moroccan Arabic",
+          "domain": "ary.wikipedia.org"
+        },
+        {
+          "lang": "arz",
+          "name": "مصرى",
+          "english": "Egyptian Arabic",
+          "domain": "arz.wikipedia.org"
+        },
+        {
+          "lang": "as",
+          "name": "অসমীয়া",
+          "english": "Assamese",
+          "domain": "as.wikipedia.org"
+        },
+        {
+          "lang": "ast",
+          "name": "asturianu",
+          "english": "Asturian",
+          "domain": "ast.wikipedia.org"
+        },
+        {
+          "lang": "atj",
+          "name": "Atikamekw",
+          "english": "Atikamekw",
+          "domain": "atj.wikipedia.org"
+        },
+        {
+          "lang": "av",
+          "name": "авар",
+          "english": "Avaric",
+          "domain": "av.wikipedia.org"
+        },
+        {
+          "lang": "avk",
+          "name": "Kotava",
+          "english": "Kotava",
+          "domain": "avk.wikipedia.org"
+        },
+        {
+          "lang": "awa",
+          "name": "अवधी",
+          "english": "Awadhi",
+          "domain": "awa.wikipedia.org"
+        },
+        {
+          "lang": "ay",
+          "name": "Aymar aru",
+          "english": "Aymara",
+          "domain": "ay.wikipedia.org"
+        },
+        {
+          "lang": "az",
+          "name": "azərbaycanca",
+          "english": "Azerbaijani",
+          "domain": "az.wikipedia.org"
+        },
+        {
+          "lang": "azb",
+          "name": "تۆرکجه",
+          "english": "South Azerbaijani",
+          "domain": "azb.wikipedia.org"
+        },
+        {
+          "lang": "ba",
+          "name": "башҡортса",
+          "english": "Bashkir",
+          "domain": "ba.wikipedia.org"
+        },
+        {
+          "lang": "ban",
+          "name": "Basa Bali",
+          "english": "Balinese",
+          "domain": "ban.wikipedia.org"
+        },
+        {
+          "lang": "bar",
+          "name": "Boarisch",
+          "english": "Bavarian",
+          "domain": "bar.wikipedia.org"
+        },
+        {
+          "lang": "bbc",
+          "name": "Batak Toba",
+          "english": "Batak Toba",
+          "domain": "bbc.wikipedia.org"
+        },
+        {
+          "lang": "bcl",
+          "name": "Bikol Central",
+          "english": "Central Bikol",
+          "domain": "bcl.wikipedia.org"
+        },
+        {
+          "lang": "bdr",
+          "name": "Bajau Sama",
+          "english": "West Coast Bajau",
+          "domain": "bdr.wikipedia.org"
+        },
+        {
+          "lang": "be",
+          "name": "беларуская",
+          "english": "Belarusian",
+          "domain": "be.wikipedia.org"
+        },
+        {
+          "lang": "be-tarask",
+          "name": "беларуская (тарашкевіца)",
+          "english": "Belarusian (Taraškievica orthography)",
+          "domain": "be-tarask.wikipedia.org"
+        },
+        {
+          "lang": "bew",
+          "name": "Betawi",
+          "english": "Betawi",
+          "domain": "bew.wikipedia.org"
+        },
+        {
+          "lang": "bg",
+          "name": "български",
+          "english": "Bulgarian",
+          "domain": "bg.wikipedia.org"
+        },
+        {
+          "lang": "bh",
+          "name": "भोजपुरी",
+          "english": "Bhojpuri",
+          "domain": "bh.wikipedia.org"
+        },
+        {
+          "lang": "bi",
+          "name": "Bislama",
+          "english": "Bislama",
+          "domain": "bi.wikipedia.org"
+        },
+        {
+          "lang": "bjn",
+          "name": "Banjar",
+          "english": "Banjar",
+          "domain": "bjn.wikipedia.org"
+        },
+        {
+          "lang": "blk",
+          "name": "ပအိုဝ်ႏဘာႏသာႏ",
+          "english": "Pa'O",
+          "domain": "blk.wikipedia.org"
+        },
+        {
+          "lang": "bm",
+          "name": "bamanankan",
+          "english": "Bambara",
+          "domain": "bm.wikipedia.org"
+        },
+        {
+          "lang": "bn",
+          "name": "বাংলা",
+          "english": "Bangla",
+          "domain": "bn.wikipedia.org"
+        },
+        {
+          "lang": "bo",
+          "name": "བོད་ཡིག",
+          "english": "Tibetan",
+          "domain": "bo.wikipedia.org"
+        },
+        {
+          "lang": "bol",
+          "name": "bòo pìkkà",
+          "english": "Bole",
+          "domain": "bol.wikipedia.org"
+        },
+        {
+          "lang": "bpy",
+          "name": "বিষ্ণুপ্রিয়া মণিপুরী",
+          "english": "Bishnupriya",
+          "domain": "bpy.wikipedia.org"
+        },
+        {
+          "lang": "br",
+          "name": "brezhoneg",
+          "english": "Breton",
+          "domain": "br.wikipedia.org"
+        },
+        {
+          "lang": "bs",
+          "name": "bosanski",
+          "english": "Bosnian",
+          "domain": "bs.wikipedia.org"
+        },
+        {
+          "lang": "btm",
+          "name": "Batak Mandailing",
+          "english": "Batak Mandailing",
+          "domain": "btm.wikipedia.org"
+        },
+        {
+          "lang": "bug",
+          "name": "Basa Ugi",
+          "english": "Buginese",
+          "domain": "bug.wikipedia.org"
+        },
+        {
+          "lang": "bxr",
+          "name": "буряад",
+          "english": "Russia Buriat",
+          "domain": "bxr.wikipedia.org"
+        },
+        {
+          "lang": "ca",
+          "name": "català",
+          "english": "Catalan",
+          "domain": "ca.wikipedia.org"
+        },
+        {
+          "lang": "cbk-zam",
+          "name": "Chavacano de Zamboanga",
+          "english": "Chavacano",
+          "domain": "cbk-zam.wikipedia.org"
+        },
+        {
+          "lang": "cdo",
+          "name": "閩東語 / Mìng-dĕ̤ng-ngṳ̄",
+          "english": "Mindong",
+          "domain": "cdo.wikipedia.org"
+        },
+        {
+          "lang": "ce",
+          "name": "нохчийн",
+          "english": "Chechen",
+          "domain": "ce.wikipedia.org"
+        },
+        {
+          "lang": "ceb",
+          "name": "Cebuano",
+          "english": "Cebuano",
+          "domain": "ceb.wikipedia.org"
+        },
+        {
+          "lang": "ch",
+          "name": "Chamoru",
+          "english": "Chamorro",
+          "domain": "ch.wikipedia.org"
+        },
+        {
+          "lang": "chr",
+          "name": "ᏣᎳᎩ",
+          "english": "Cherokee",
+          "domain": "chr.wikipedia.org"
+        },
+        {
+          "lang": "chy",
+          "name": "Tsetsêhestâhese",
+          "english": "Cheyenne",
+          "domain": "chy.wikipedia.org"
+        },
+        {
+          "lang": "ckb",
+          "name": "کوردی",
+          "english": "Central Kurdish",
+          "domain": "ckb.wikipedia.org"
+        },
+        {
+          "lang": "co",
+          "name": "corsu",
+          "english": "Corsican",
+          "domain": "co.wikipedia.org"
+        },
+        {
+          "lang": "crh",
+          "name": "qırımtatarca",
+          "english": "Crimean Tatar",
+          "domain": "crh.wikipedia.org"
+        },
+        {
+          "lang": "cs",
+          "name": "čeština",
+          "english": "Czech",
+          "domain": "cs.wikipedia.org"
+        },
+        {
+          "lang": "csb",
+          "name": "kaszëbsczi",
+          "english": "Kashubian",
+          "domain": "csb.wikipedia.org"
+        },
+        {
+          "lang": "cu",
+          "name": "словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ",
+          "english": "Church Slavic",
+          "domain": "cu.wikipedia.org"
+        },
+        {
+          "lang": "cv",
+          "name": "чӑвашла",
+          "english": "Chuvash",
+          "domain": "cv.wikipedia.org"
+        },
+        {
+          "lang": "cy",
+          "name": "Cymraeg",
+          "english": "Welsh",
+          "domain": "cy.wikipedia.org"
+        },
+        {
+          "lang": "da",
+          "name": "dansk",
+          "english": "Danish",
+          "domain": "da.wikipedia.org"
+        },
+        {
+          "lang": "dag",
+          "name": "dagbanli",
+          "english": "Dagbani",
+          "domain": "dag.wikipedia.org"
+        },
+        {
+          "lang": "de",
+          "name": "Deutsch",
+          "english": "German",
+          "domain": "de.wikipedia.org"
+        },
+        {
+          "lang": "dga",
+          "name": "Dagaare",
+          "english": "Southern Dagaare",
+          "domain": "dga.wikipedia.org"
+        },
+        {
+          "lang": "din",
+          "name": "Thuɔŋjäŋ",
+          "english": "Dinka",
+          "domain": "din.wikipedia.org"
+        },
+        {
+          "lang": "diq",
+          "name": "Zazaki",
+          "english": "Dimli",
+          "domain": "diq.wikipedia.org"
+        },
+        {
+          "lang": "dsb",
+          "name": "dolnoserbski",
+          "english": "Lower Sorbian",
+          "domain": "dsb.wikipedia.org"
+        },
+        {
+          "lang": "dtp",
+          "name": "Kadazandusun",
+          "english": "Central Dusun",
+          "domain": "dtp.wikipedia.org"
+        },
+        {
+          "lang": "dty",
+          "name": "डोटेली",
+          "english": "Doteli",
+          "domain": "dty.wikipedia.org"
+        },
+        {
+          "lang": "dv",
+          "name": "ދިވެހިބަސް",
+          "english": "Divehi",
+          "domain": "dv.wikipedia.org"
+        },
+        {
+          "lang": "dz",
+          "name": "ཇོང་ཁ",
+          "english": "Dzongkha",
+          "domain": "dz.wikipedia.org"
+        },
+        {
+          "lang": "ee",
+          "name": "eʋegbe",
+          "english": "Ewe",
+          "domain": "ee.wikipedia.org"
+        },
+        {
+          "lang": "el",
+          "name": "Ελληνικά",
+          "english": "Greek",
+          "domain": "el.wikipedia.org"
+        },
+        {
+          "lang": "eml",
+          "name": "emiliàn e rumagnòl",
+          "english": "Emiliano-Romagnolo",
+          "domain": "eml.wikipedia.org"
+        },
+        {
+          "lang": "en",
+          "name": "English",
+          "english": "English",
+          "domain": "en.wikipedia.org"
+        },
+        {
+          "lang": "eo",
+          "name": "Esperanto",
+          "english": "Esperanto",
+          "domain": "eo.wikipedia.org"
+        },
+        {
+          "lang": "es",
+          "name": "español",
+          "english": "Spanish",
+          "domain": "es.wikipedia.org"
+        },
+        {
+          "lang": "et",
+          "name": "eesti",
+          "english": "Estonian",
+          "domain": "et.wikipedia.org"
+        },
+        {
+          "lang": "eu",
+          "name": "euskara",
+          "english": "Basque",
+          "domain": "eu.wikipedia.org"
+        },
+        {
+          "lang": "ext",
+          "name": "estremeñu",
+          "english": "Extremaduran",
+          "domain": "ext.wikipedia.org"
+        },
+        {
+          "lang": "fa",
+          "name": "فارسی",
+          "english": "Persian",
+          "domain": "fa.wikipedia.org"
+        },
+        {
+          "lang": "fat",
+          "name": "mfantse",
+          "english": "Fanti",
+          "domain": "fat.wikipedia.org"
+        },
+        {
+          "lang": "ff",
+          "name": "Fulfulde",
+          "english": "Fula",
+          "domain": "ff.wikipedia.org"
+        },
+        {
+          "lang": "fi",
+          "name": "suomi",
+          "english": "Finnish",
+          "domain": "fi.wikipedia.org"
+        },
+        {
+          "lang": "fj",
+          "name": "Na Vosa Vakaviti",
+          "english": "Fijian",
+          "domain": "fj.wikipedia.org"
+        },
+        {
+          "lang": "fo",
+          "name": "føroyskt",
+          "english": "Faroese",
+          "domain": "fo.wikipedia.org"
+        },
+        {
+          "lang": "fon",
+          "name": "fɔ̀ngbè",
+          "english": "Fon",
+          "domain": "fon.wikipedia.org"
+        },
+        {
+          "lang": "fr",
+          "name": "français",
+          "english": "French",
+          "domain": "fr.wikipedia.org"
+        },
+        {
+          "lang": "frp",
+          "name": "arpetan",
+          "english": "Arpitan",
+          "domain": "frp.wikipedia.org"
+        },
+        {
+          "lang": "frr",
+          "name": "Nordfriisk",
+          "english": "Northern Frisian",
+          "domain": "frr.wikipedia.org"
+        },
+        {
+          "lang": "fur",
+          "name": "furlan",
+          "english": "Friulian",
+          "domain": "fur.wikipedia.org"
+        },
+        {
+          "lang": "fy",
+          "name": "Frysk",
+          "english": "Western Frisian",
+          "domain": "fy.wikipedia.org"
+        },
+        {
+          "lang": "ga",
+          "name": "Gaeilge",
+          "english": "Irish",
+          "domain": "ga.wikipedia.org"
+        },
+        {
+          "lang": "gag",
+          "name": "Gagauz",
+          "english": "Gagauz",
+          "domain": "gag.wikipedia.org"
+        },
+        {
+          "lang": "gan",
+          "name": "贛語",
+          "english": "Gan",
+          "domain": "gan.wikipedia.org"
+        },
+        {
+          "lang": "gcr",
+          "name": "kriyòl gwiyannen",
+          "english": "Guianan Creole",
+          "domain": "gcr.wikipedia.org"
+        },
+        {
+          "lang": "gd",
+          "name": "Gàidhlig",
+          "english": "Scottish Gaelic",
+          "domain": "gd.wikipedia.org"
+        },
+        {
+          "lang": "gl",
+          "name": "galego",
+          "english": "Galician",
+          "domain": "gl.wikipedia.org"
+        },
+        {
+          "lang": "glk",
+          "name": "گیلکی",
+          "english": "Gilaki",
+          "domain": "glk.wikipedia.org"
+        },
+        {
+          "lang": "gn",
+          "name": "Avañe'ẽ",
+          "english": "Guarani",
+          "domain": "gn.wikipedia.org"
+        },
+        {
+          "lang": "gom",
+          "name": "गोंयची कोंकणी / Gõychi Konknni",
+          "english": "Goan Konkani",
+          "domain": "gom.wikipedia.org"
+        },
+        {
+          "lang": "gor",
+          "name": "Bahasa Hulontalo",
+          "english": "Gorontalo",
+          "domain": "gor.wikipedia.org"
+        },
+        {
+          "lang": "got",
+          "name": "𐌲𐌿𐍄𐌹𐍃𐌺",
+          "english": "Gothic",
+          "domain": "got.wikipedia.org"
+        },
+        {
+          "lang": "gpe",
+          "name": "Ghanaian Pidgin",
+          "english": "Ghanaian Pidgin",
+          "domain": "gpe.wikipedia.org"
+        },
+        {
+          "lang": "gsw",
+          "name": "Alemannisch",
+          "english": "Alemannic",
+          "domain": "als.wikipedia.org"
+        },
+        {
+          "lang": "gu",
+          "name": "ગુજરાતી",
+          "english": "Gujarati",
+          "domain": "gu.wikipedia.org"
+        },
+        {
+          "lang": "guc",
+          "name": "wayuunaiki",
+          "english": "Wayuu",
+          "domain": "guc.wikipedia.org"
+        },
+        {
+          "lang": "gur",
+          "name": "farefare",
+          "english": "Frafra",
+          "domain": "gur.wikipedia.org"
+        },
+        {
+          "lang": "guw",
+          "name": "gungbe",
+          "english": "Gun",
+          "domain": "guw.wikipedia.org"
+        },
+        {
+          "lang": "gv",
+          "name": "Gaelg",
+          "english": "Manx",
+          "domain": "gv.wikipedia.org"
+        },
+        {
+          "lang": "ha",
+          "name": "Hausa",
+          "english": "Hausa",
+          "domain": "ha.wikipedia.org"
+        },
+        {
+          "lang": "hak",
+          "name": "客家語 / Hak-kâ-ngî",
+          "english": "Hakka Chinese",
+          "domain": "hak.wikipedia.org"
+        },
+        {
+          "lang": "haw",
+          "name": "Hawaiʻi",
+          "english": "Hawaiian",
+          "domain": "haw.wikipedia.org"
+        },
+        {
+          "lang": "he",
+          "name": "עברית",
+          "english": "Hebrew",
+          "domain": "he.wikipedia.org"
+        },
+        {
+          "lang": "hi",
+          "name": "हिन्दी",
+          "english": "Hindi",
+          "domain": "hi.wikipedia.org"
+        },
+        {
+          "lang": "hif",
+          "name": "Fiji Hindi",
+          "english": "Fiji Hindi",
+          "domain": "hif.wikipedia.org"
+        },
+        {
+          "lang": "hr",
+          "name": "hrvatski",
+          "english": "Croatian",
+          "domain": "hr.wikipedia.org"
+        },
+        {
+          "lang": "hsb",
+          "name": "hornjoserbsce",
+          "english": "Upper Sorbian",
+          "domain": "hsb.wikipedia.org"
+        },
+        {
+          "lang": "ht",
+          "name": "Kreyòl ayisyen",
+          "english": "Haitian Creole",
+          "domain": "ht.wikipedia.org"
+        },
+        {
+          "lang": "hu",
+          "name": "magyar",
+          "english": "Hungarian",
+          "domain": "hu.wikipedia.org"
+        },
+        {
+          "lang": "hy",
+          "name": "հայերեն",
+          "english": "Armenian",
+          "domain": "hy.wikipedia.org"
+        },
+        {
+          "lang": "hyw",
+          "name": "Արեւմտահայերէն",
+          "english": "Western Armenian",
+          "domain": "hyw.wikipedia.org"
+        },
+        {
+          "lang": "ia",
+          "name": "interlingua",
+          "english": "Interlingua",
+          "domain": "ia.wikipedia.org"
+        },
+        {
+          "lang": "iba",
+          "name": "Jaku Iban",
+          "english": "Iban",
+          "domain": "iba.wikipedia.org"
+        },
+        {
+          "lang": "id",
+          "name": "Bahasa Indonesia",
+          "english": "Indonesian",
+          "domain": "id.wikipedia.org"
+        },
+        {
+          "lang": "ie",
+          "name": "Interlingue",
+          "english": "Interlingue",
+          "domain": "ie.wikipedia.org"
+        },
+        {
+          "lang": "ig",
+          "name": "Igbo",
+          "english": "Igbo",
+          "domain": "ig.wikipedia.org"
+        },
+        {
+          "lang": "igl",
+          "name": "Igala",
+          "english": "Igala",
+          "domain": "igl.wikipedia.org"
+        },
+        {
+          "lang": "ik",
+          "name": "Iñupiatun",
+          "english": "Inupiaq",
+          "domain": "ik.wikipedia.org"
+        },
+        {
+          "lang": "ilo",
+          "name": "Ilokano",
+          "english": "Iloko",
+          "domain": "ilo.wikipedia.org"
+        },
+        {
+          "lang": "inh",
+          "name": "гӀалгӀай",
+          "english": "Ingush",
+          "domain": "inh.wikipedia.org"
+        },
+        {
+          "lang": "io",
+          "name": "Ido",
+          "english": "Ido",
+          "domain": "io.wikipedia.org"
+        },
+        {
+          "lang": "is",
+          "name": "íslenska",
+          "english": "Icelandic",
+          "domain": "is.wikipedia.org"
+        },
+        {
+          "lang": "isv",
+          "name": "medžuslovjansky",
+          "english": "Interslavic",
+          "domain": "isv.wikipedia.org"
+        },
+        {
+          "lang": "it",
+          "name": "italiano",
+          "english": "Italian",
+          "domain": "it.wikipedia.org"
+        },
+        {
+          "lang": "iu",
+          "name": "ᐃᓄᒃᑎᑐᑦ / inuktitut",
+          "english": "Inuktitut",
+          "domain": "iu.wikipedia.org"
+        },
+        {
+          "lang": "ja",
+          "name": "日本語",
+          "english": "Japanese",
+          "domain": "ja.wikipedia.org"
+        },
+        {
+          "lang": "jam",
+          "name": "Patois",
+          "english": "Jamaican Creole English",
+          "domain": "jam.wikipedia.org"
+        },
+        {
+          "lang": "jbo",
+          "name": "la .lojban.",
+          "english": "Lojban",
+          "domain": "jbo.wikipedia.org"
+        },
+        {
+          "lang": "jv",
+          "name": "Jawa",
+          "english": "Javanese",
+          "domain": "jv.wikipedia.org"
+        },
+        {
+          "lang": "ka",
+          "name": "ქართული",
+          "english": "Georgian",
+          "domain": "ka.wikipedia.org"
+        },
+        {
+          "lang": "kaa",
+          "name": "Qaraqalpaqsha",
+          "english": "Kara-Kalpak",
+          "domain": "kaa.wikipedia.org"
+        },
+        {
+          "lang": "kab",
+          "name": "Taqbaylit",
+          "english": "Kabyle",
+          "domain": "kab.wikipedia.org"
+        },
+        {
+          "lang": "kai",
+          "name": "Karai-karai",
+          "english": "Karekare",
+          "domain": "kai.wikipedia.org"
+        },
+        {
+          "lang": "kaj",
+          "name": "Jju",
+          "english": "Jju",
+          "domain": "kaj.wikipedia.org"
+        },
+        {
+          "lang": "kbd",
+          "name": "адыгэбзэ",
+          "english": "Kabardian",
+          "domain": "kbd.wikipedia.org"
+        },
+        {
+          "lang": "kbp",
+          "name": "Kabɩyɛ",
+          "english": "Kabiye",
+          "domain": "kbp.wikipedia.org"
+        },
+        {
+          "lang": "kcg",
+          "name": "Tyap",
+          "english": "Tyap",
+          "domain": "kcg.wikipedia.org"
+        },
+        {
+          "lang": "kg",
+          "name": "Kongo",
+          "english": "Kongo",
+          "domain": "kg.wikipedia.org"
+        },
+        {
+          "lang": "kge",
+          "name": "Kumoring",
+          "english": "Komering",
+          "domain": "kge.wikipedia.org"
+        },
+        {
+          "lang": "ki",
+          "name": "Gĩkũyũ",
+          "english": "Kikuyu",
+          "domain": "ki.wikipedia.org"
+        },
+        {
+          "lang": "kk",
+          "name": "қазақша",
+          "english": "Kazakh",
+          "domain": "kk.wikipedia.org"
+        },
+        {
+          "lang": "km",
+          "name": "ភាសាខ្មែរ",
+          "english": "Khmer",
+          "domain": "km.wikipedia.org"
+        },
+        {
+          "lang": "kn",
+          "name": "ಕನ್ನಡ",
+          "english": "Kannada",
+          "domain": "kn.wikipedia.org"
+        },
+        {
+          "lang": "knc",
+          "name": "Yerwa Kanuri",
+          "english": "Central Kanuri",
+          "domain": "knc.wikipedia.org"
+        },
+        {
+          "lang": "ko",
+          "name": "한국어",
+          "english": "Korean",
+          "domain": "ko.wikipedia.org"
+        },
+        {
+          "lang": "koi",
+          "name": "перем коми",
+          "english": "Komi-Permyak",
+          "domain": "koi.wikipedia.org"
+        },
+        {
+          "lang": "krc",
+          "name": "къарачай-малкъар",
+          "english": "Karachay-Balkar",
+          "domain": "krc.wikipedia.org"
+        },
+        {
+          "lang": "ks",
+          "name": "کٲشُر",
+          "english": "Kashmiri",
+          "domain": "ks.wikipedia.org"
+        },
+        {
+          "lang": "ksh",
+          "name": "Ripoarisch",
+          "english": "Colognian",
+          "domain": "ksh.wikipedia.org"
+        },
+        {
+          "lang": "ku",
+          "name": "kurdî",
+          "english": "Kurdish",
+          "domain": "ku.wikipedia.org"
+        },
+        {
+          "lang": "kus",
+          "name": "Kʋsaal",
+          "english": "Kusaal",
+          "domain": "kus.wikipedia.org"
+        },
+        {
+          "lang": "kv",
+          "name": "коми",
+          "english": "Komi",
+          "domain": "kv.wikipedia.org"
+        },
+        {
+          "lang": "kw",
+          "name": "kernowek",
+          "english": "Cornish",
+          "domain": "kw.wikipedia.org"
+        },
+        {
+          "lang": "ky",
+          "name": "кыргызча",
+          "english": "Kyrgyz",
+          "domain": "ky.wikipedia.org"
+        },
+        {
+          "lang": "la",
+          "name": "Latina",
+          "english": "Latin",
+          "domain": "la.wikipedia.org"
+        },
+        {
+          "lang": "lad",
+          "name": "Ladino",
+          "english": "Ladino",
+          "domain": "lad.wikipedia.org"
+        },
+        {
+          "lang": "lb",
+          "name": "Lëtzebuergesch",
+          "english": "Luxembourgish",
+          "domain": "lb.wikipedia.org"
+        },
+        {
+          "lang": "lbe",
+          "name": "лакку",
+          "english": "Lak",
+          "domain": "lbe.wikipedia.org"
+        },
+        {
+          "lang": "lez",
+          "name": "лезги",
+          "english": "Lezghian",
+          "domain": "lez.wikipedia.org"
+        },
+        {
+          "lang": "lfn",
+          "name": "Lingua Franca Nova",
+          "english": "Lingua Franca Nova",
+          "domain": "lfn.wikipedia.org"
+        },
+        {
+          "lang": "lg",
+          "name": "Luganda",
+          "english": "Ganda",
+          "domain": "lg.wikipedia.org"
+        },
+        {
+          "lang": "li",
+          "name": "Limburgs",
+          "english": "Limburgish",
+          "domain": "li.wikipedia.org"
+        },
+        {
+          "lang": "lij",
+          "name": "Ligure",
+          "english": "Ligurian",
+          "domain": "lij.wikipedia.org"
+        },
+        {
+          "lang": "lld",
+          "name": "Ladin",
+          "english": "Ladin",
+          "domain": "lld.wikipedia.org"
+        },
+        {
+          "lang": "lmo",
+          "name": "lombard",
+          "english": "Lombard",
+          "domain": "lmo.wikipedia.org"
+        },
+        {
+          "lang": "ln",
+          "name": "lingála",
+          "english": "Lingala",
+          "domain": "ln.wikipedia.org"
+        },
+        {
+          "lang": "lo",
+          "name": "ລາວ",
+          "english": "Lao",
+          "domain": "lo.wikipedia.org"
+        },
+        {
+          "lang": "lt",
+          "name": "lietuvių",
+          "english": "Lithuanian",
+          "domain": "lt.wikipedia.org"
+        },
+        {
+          "lang": "ltg",
+          "name": "latgaļu",
+          "english": "Latgalian",
+          "domain": "ltg.wikipedia.org"
+        },
+        {
+          "lang": "lv",
+          "name": "latviešu",
+          "english": "Latvian",
+          "domain": "lv.wikipedia.org"
+        },
+        {
+          "lang": "lzh",
+          "name": "文言",
+          "english": "Literary Chinese",
+          "domain": "zh-classical.wikipedia.org"
+        },
+        {
+          "lang": "mad",
+          "name": "Madhurâ",
+          "english": "Madurese",
+          "domain": "mad.wikipedia.org"
+        },
+        {
+          "lang": "mag",
+          "name": "मगही",
+          "english": "Magahi",
+          "domain": "mag.wikipedia.org"
+        },
+        {
+          "lang": "mai",
+          "name": "मैथिली",
+          "english": "Maithili",
+          "domain": "mai.wikipedia.org"
+        },
+        {
+          "lang": "map-bms",
+          "name": "Basa Banyumasan",
+          "english": "Banyumasan",
+          "domain": "map-bms.wikipedia.org"
+        },
+        {
+          "lang": "mdf",
+          "name": "мокшень",
+          "english": "Moksha",
+          "domain": "mdf.wikipedia.org"
+        },
+        {
+          "lang": "mg",
+          "name": "Malagasy",
+          "english": "Malagasy",
+          "domain": "mg.wikipedia.org"
+        },
+        {
+          "lang": "mhr",
+          "name": "олык марий",
+          "english": "Eastern Mari",
+          "domain": "mhr.wikipedia.org"
+        },
+        {
+          "lang": "mi",
+          "name": "Māori",
+          "english": "Māori",
+          "domain": "mi.wikipedia.org"
+        },
+        {
+          "lang": "min",
+          "name": "Minangkabau",
+          "english": "Minangkabau",
+          "domain": "min.wikipedia.org"
+        },
+        {
+          "lang": "mk",
+          "name": "македонски",
+          "english": "Macedonian",
+          "domain": "mk.wikipedia.org"
+        },
+        {
+          "lang": "ml",
+          "name": "മലയാളം",
+          "english": "Malayalam",
+          "domain": "ml.wikipedia.org"
+        },
+        {
+          "lang": "mn",
+          "name": "монгол",
+          "english": "Mongolian",
+          "domain": "mn.wikipedia.org"
+        },
+        {
+          "lang": "mni",
+          "name": "ꯃꯤꯇꯩ ꯂꯣꯟ",
+          "english": "Manipuri",
+          "domain": "mni.wikipedia.org"
+        },
+        {
+          "lang": "mnw",
+          "name": "ဘာသာမန်",
+          "english": "Mon",
+          "domain": "mnw.wikipedia.org"
+        },
+        {
+          "lang": "mos",
+          "name": "moore",
+          "english": "Mossi",
+          "domain": "mos.wikipedia.org"
+        },
+        {
+          "lang": "mr",
+          "name": "मराठी",
+          "english": "Marathi",
+          "domain": "mr.wikipedia.org"
+        },
+        {
+          "lang": "mrj",
+          "name": "кырык мары",
+          "english": "Western Mari",
+          "domain": "mrj.wikipedia.org"
+        },
+        {
+          "lang": "ms",
+          "name": "Bahasa Melayu",
+          "english": "Malay",
+          "domain": "ms.wikipedia.org"
+        },
+        {
+          "lang": "mt",
+          "name": "Malti",
+          "english": "Maltese",
+          "domain": "mt.wikipedia.org"
+        },
+        {
+          "lang": "mwl",
+          "name": "Mirandés",
+          "english": "Mirandese",
+          "domain": "mwl.wikipedia.org"
+        },
+        {
+          "lang": "my",
+          "name": "မြန်မာဘာသာ",
+          "english": "Burmese",
+          "domain": "my.wikipedia.org"
+        },
+        {
+          "lang": "myv",
+          "name": "эрзянь",
+          "english": "Erzya",
+          "domain": "myv.wikipedia.org"
+        },
+        {
+          "lang": "mzn",
+          "name": "مازِرونی",
+          "english": "Mazanderani",
+          "domain": "mzn.wikipedia.org"
+        },
+        {
+          "lang": "nah",
+          "name": "Nāhuatl",
+          "english": "Nahuatl",
+          "domain": "nah.wikipedia.org"
+        },
+        {
+          "lang": "nan",
+          "name": "閩南語 / Bân-lâm-gí",
+          "english": "Minnan",
+          "domain": "zh-min-nan.wikipedia.org"
+        },
+        {
+          "lang": "nap",
+          "name": "Napulitano",
+          "english": "Neapolitan",
+          "domain": "nap.wikipedia.org"
+        },
+        {
+          "lang": "nds",
+          "name": "Plattdüütsch",
+          "english": "Low German",
+          "domain": "nds.wikipedia.org"
+        },
+        {
+          "lang": "nds-nl",
+          "name": "Nedersaksies",
+          "english": "Low Saxon",
+          "domain": "nds-nl.wikipedia.org"
+        },
+        {
+          "lang": "ne",
+          "name": "नेपाली",
+          "english": "Nepali",
+          "domain": "ne.wikipedia.org"
+        },
+        {
+          "lang": "new",
+          "name": "नेपाल भाषा",
+          "english": "Newari",
+          "domain": "new.wikipedia.org"
+        },
+        {
+          "lang": "nia",
+          "name": "Li Niha",
+          "english": "Nias",
+          "domain": "nia.wikipedia.org"
+        },
+        {
+          "lang": "nl",
+          "name": "Nederlands",
+          "english": "Dutch",
+          "domain": "nl.wikipedia.org"
+        },
+        {
+          "lang": "nn",
+          "name": "norsk nynorsk",
+          "english": "Norwegian Nynorsk",
+          "domain": "nn.wikipedia.org"
+        },
+        {
+          "lang": "no",
+          "name": "norsk",
+          "english": "Norwegian",
+          "domain": "no.wikipedia.org"
+        },
+        {
+          "lang": "nov",
+          "name": "Novial",
+          "english": "Novial",
+          "domain": "nov.wikipedia.org"
+        },
+        {
+          "lang": "nqo",
+          "name": "ߒߞߏ",
+          "english": "N’Ko",
+          "domain": "nqo.wikipedia.org"
+        },
+        {
+          "lang": "nr",
+          "name": "isiNdebele seSewula",
+          "english": "South Ndebele",
+          "domain": "nr.wikipedia.org"
+        },
+        {
+          "lang": "nrm",
+          "name": "Nouormand",
+          "english": "Norman",
+          "domain": "nrm.wikipedia.org"
+        },
+        {
+          "lang": "nso",
+          "name": "Sesotho sa Leboa",
+          "english": "Northern Sotho",
+          "domain": "nso.wikipedia.org"
+        },
+        {
+          "lang": "nup",
+          "name": "Nupe",
+          "english": "Nupe",
+          "domain": "nup.wikipedia.org"
+        },
+        {
+          "lang": "nv",
+          "name": "Diné bizaad",
+          "english": "Navajo",
+          "domain": "nv.wikipedia.org"
+        },
+        {
+          "lang": "ny",
+          "name": "Chi-Chewa",
+          "english": "Nyanja",
+          "domain": "ny.wikipedia.org"
+        },
+        {
+          "lang": "oc",
+          "name": "occitan",
+          "english": "Occitan",
+          "domain": "oc.wikipedia.org"
+        },
+        {
+          "lang": "olo",
+          "name": "livvinkarjala",
+          "english": "Livvi-Karelian",
+          "domain": "olo.wikipedia.org"
+        },
+        {
+          "lang": "om",
+          "name": "Oromoo",
+          "english": "Oromo",
+          "domain": "om.wikipedia.org"
+        },
+        {
+          "lang": "or",
+          "name": "ଓଡ଼ିଆ",
+          "english": "Odia",
+          "domain": "or.wikipedia.org"
+        },
+        {
+          "lang": "os",
+          "name": "ирон",
+          "english": "Ossetic",
+          "domain": "os.wikipedia.org"
+        },
+        {
+          "lang": "pa",
+          "name": "ਪੰਜਾਬੀ",
+          "english": "Punjabi",
+          "domain": "pa.wikipedia.org"
+        },
+        {
+          "lang": "pag",
+          "name": "Pangasinan",
+          "english": "Pangasinan",
+          "domain": "pag.wikipedia.org"
+        },
+        {
+          "lang": "pam",
+          "name": "Kapampangan",
+          "english": "Pampanga",
+          "domain": "pam.wikipedia.org"
+        },
+        {
+          "lang": "pap",
+          "name": "Papiamentu",
+          "english": "Papiamento",
+          "domain": "pap.wikipedia.org"
+        },
+        {
+          "lang": "pcd",
+          "name": "Picard",
+          "english": "Picard",
+          "domain": "pcd.wikipedia.org"
+        },
+        {
+          "lang": "pcm",
+          "name": "Naijá",
+          "english": "Nigerian Pidgin",
+          "domain": "pcm.wikipedia.org"
+        },
+        {
+          "lang": "pdc",
+          "name": "Deitsch",
+          "english": "Pennsylvania German",
+          "domain": "pdc.wikipedia.org"
+        },
+        {
+          "lang": "pfl",
+          "name": "Pälzisch",
+          "english": "Palatine German",
+          "domain": "pfl.wikipedia.org"
+        },
+        {
+          "lang": "pi",
+          "name": "पालि",
+          "english": "Pali",
+          "domain": "pi.wikipedia.org"
+        },
+        {
+          "lang": "pl",
+          "name": "polski",
+          "english": "Polish",
+          "domain": "pl.wikipedia.org"
+        },
+        {
+          "lang": "pms",
+          "name": "Piemontèis",
+          "english": "Piedmontese",
+          "domain": "pms.wikipedia.org"
+        },
+        {
+          "lang": "pnb",
+          "name": "پنجابی",
+          "english": "Western Punjabi",
+          "domain": "pnb.wikipedia.org"
+        },
+        {
+          "lang": "pnt",
+          "name": "Ποντιακά",
+          "english": "Pontic",
+          "domain": "pnt.wikipedia.org"
+        },
+        {
+          "lang": "ppl",
+          "name": "Nawat",
+          "english": "Nawat",
+          "domain": "ppl.wikipedia.org"
+        },
+        {
+          "lang": "ps",
+          "name": "پښتو",
+          "english": "Pashto",
+          "domain": "ps.wikipedia.org"
+        },
+        {
+          "lang": "pt",
+          "name": "português",
+          "english": "Portuguese",
+          "domain": "pt.wikipedia.org"
+        },
+        {
+          "lang": "pwn",
+          "name": "pinayuanan",
+          "english": "Paiwan",
+          "domain": "pwn.wikipedia.org"
+        },
+        {
+          "lang": "qu",
+          "name": "Runa Simi",
+          "english": "Quechua",
+          "domain": "qu.wikipedia.org"
+        },
+        {
+          "lang": "rki",
+          "name": "ရခိုင်",
+          "english": "Arakanese",
+          "domain": "rki.wikipedia.org"
+        },
+        {
+          "lang": "rm",
+          "name": "rumantsch",
+          "english": "Romansh",
+          "domain": "rm.wikipedia.org"
+        },
+        {
+          "lang": "rmy",
+          "name": "romani čhib",
+          "english": "Vlax Romani",
+          "domain": "rmy.wikipedia.org"
+        },
+        {
+          "lang": "rn",
+          "name": "ikirundi",
+          "english": "Rundi",
+          "domain": "rn.wikipedia.org"
+        },
+        {
+          "lang": "ro",
+          "name": "română",
+          "english": "Romanian",
+          "domain": "ro.wikipedia.org"
+        },
+        {
+          "lang": "roa-tara",
+          "name": "tarandíne",
+          "english": "Tarantino",
+          "domain": "roa-tara.wikipedia.org"
+        },
+        {
+          "lang": "rsk",
+          "name": "руски",
+          "english": "Pannonian Rusyn",
+          "domain": "rsk.wikipedia.org"
+        },
+        {
+          "lang": "ru",
+          "name": "русский",
+          "english": "Russian",
+          "domain": "ru.wikipedia.org"
+        },
+        {
+          "lang": "rue",
+          "name": "русиньскый",
+          "english": "Rusyn",
+          "domain": "rue.wikipedia.org"
+        },
+        {
+          "lang": "rup",
+          "name": "armãneashti",
+          "english": "Aromanian",
+          "domain": "roa-rup.wikipedia.org"
+        },
+        {
+          "lang": "rw",
+          "name": "Ikinyarwanda",
+          "english": "Kinyarwanda",
+          "domain": "rw.wikipedia.org"
+        },
+        {
+          "lang": "sa",
+          "name": "संस्कृतम्",
+          "english": "Sanskrit",
+          "domain": "sa.wikipedia.org"
+        },
+        {
+          "lang": "sah",
+          "name": "саха тыла",
+          "english": "Yakut",
+          "domain": "sah.wikipedia.org"
+        },
+        {
+          "lang": "sat",
+          "name": "ᱥᱟᱱᱛᱟᱲᱤ",
+          "english": "Santali",
+          "domain": "sat.wikipedia.org"
+        },
+        {
+          "lang": "sc",
+          "name": "sardu",
+          "english": "Sardinian",
+          "domain": "sc.wikipedia.org"
+        },
+        {
+          "lang": "scn",
+          "name": "sicilianu",
+          "english": "Sicilian",
+          "domain": "scn.wikipedia.org"
+        },
+        {
+          "lang": "sco",
+          "name": "Scots",
+          "english": "Scots",
+          "domain": "sco.wikipedia.org"
+        },
+        {
+          "lang": "sd",
+          "name": "سنڌي",
+          "english": "Sindhi",
+          "domain": "sd.wikipedia.org"
+        },
+        {
+          "lang": "se",
+          "name": "davvisámegiella",
+          "english": "Northern Sami",
+          "domain": "se.wikipedia.org"
+        },
+        {
+          "lang": "sg",
+          "name": "Sängö",
+          "english": "Sango",
+          "domain": "sg.wikipedia.org"
+        },
+        {
+          "lang": "sgs",
+          "name": "žemaitėška",
+          "english": "Samogitian",
+          "domain": "bat-smg.wikipedia.org"
+        },
+        {
+          "lang": "sh",
+          "name": "srpskohrvatski / српскохрватски",
+          "english": "Serbo-Croatian",
+          "domain": "sh.wikipedia.org"
+        },
+        {
+          "lang": "shi",
+          "name": "Taclḥit",
+          "english": "Tachelhit",
+          "domain": "shi.wikipedia.org"
+        },
+        {
+          "lang": "shn",
+          "name": "တႆး",
+          "english": "Shan",
+          "domain": "shn.wikipedia.org"
+        },
+        {
+          "lang": "si",
+          "name": "සිංහල",
+          "english": "Sinhala",
+          "domain": "si.wikipedia.org"
+        },
+        {
+          "lang": "simple",
+          "name": "Simple English",
+          "english": "Simple English",
+          "domain": "simple.wikipedia.org"
+        },
+        {
+          "lang": "sk",
+          "name": "slovenčina",
+          "english": "Slovak",
+          "domain": "sk.wikipedia.org"
+        },
+        {
+          "lang": "skr",
+          "name": "سرائیکی",
+          "english": "Saraiki",
+          "domain": "skr.wikipedia.org"
+        },
+        {
+          "lang": "sl",
+          "name": "slovenščina",
+          "english": "Slovenian",
+          "domain": "sl.wikipedia.org"
+        },
+        {
+          "lang": "sm",
+          "name": "Gagana Samoa",
+          "english": "Samoan",
+          "domain": "sm.wikipedia.org"
+        },
+        {
+          "lang": "smn",
+          "name": "anarâškielâ",
+          "english": "Inari Sami",
+          "domain": "smn.wikipedia.org"
+        },
+        {
+          "lang": "sn",
+          "name": "chiShona",
+          "english": "Shona",
+          "domain": "sn.wikipedia.org"
+        },
+        {
+          "lang": "so",
+          "name": "Soomaaliga",
+          "english": "Somali",
+          "domain": "so.wikipedia.org"
+        },
+        {
+          "lang": "sq",
+          "name": "shqip",
+          "english": "Albanian",
+          "domain": "sq.wikipedia.org"
+        },
+        {
+          "lang": "sr",
+          "name": "српски / srpski",
+          "english": "Serbian",
+          "domain": "sr.wikipedia.org"
+        },
+        {
+          "lang": "srn",
+          "name": "Sranantongo",
+          "english": "Sranan Tongo",
+          "domain": "srn.wikipedia.org"
+        },
+        {
+          "lang": "ss",
+          "name": "SiSwati",
+          "english": "Swati",
+          "domain": "ss.wikipedia.org"
+        },
+        {
+          "lang": "st",
+          "name": "Sesotho",
+          "english": "Southern Sotho",
+          "domain": "st.wikipedia.org"
+        },
+        {
+          "lang": "stq",
+          "name": "Seeltersk",
+          "english": "Saterland Frisian",
+          "domain": "stq.wikipedia.org"
+        },
+        {
+          "lang": "su",
+          "name": "Sunda",
+          "english": "Sundanese",
+          "domain": "su.wikipedia.org"
+        },
+        {
+          "lang": "sv",
+          "name": "svenska",
+          "english": "Swedish",
+          "domain": "sv.wikipedia.org"
+        },
+        {
+          "lang": "sw",
+          "name": "Kiswahili",
+          "english": "Swahili",
+          "domain": "sw.wikipedia.org"
+        },
+        {
+          "lang": "syl",
+          "name": "ꠍꠤꠟꠐꠤ",
+          "english": "Sylheti",
+          "domain": "syl.wikipedia.org"
+        },
+        {
+          "lang": "szl",
+          "name": "ślůnski",
+          "english": "Silesian",
+          "domain": "szl.wikipedia.org"
+        },
+        {
+          "lang": "szy",
+          "name": "Sakizaya",
+          "english": "Sakizaya",
+          "domain": "szy.wikipedia.org"
+        },
+        {
+          "lang": "ta",
+          "name": "தமிழ்",
+          "english": "Tamil",
+          "domain": "ta.wikipedia.org"
+        },
+        {
+          "lang": "tay",
+          "name": "Tayal",
+          "english": "Atayal",
+          "domain": "tay.wikipedia.org"
+        },
+        {
+          "lang": "tcy",
+          "name": "ತುಳು",
+          "english": "Tulu",
+          "domain": "tcy.wikipedia.org"
+        },
+        {
+          "lang": "tdd",
+          "name": "ᥖᥭᥰ ᥖᥬᥲ ᥑᥨᥒᥰ",
+          "english": "Tai Nuea",
+          "domain": "tdd.wikipedia.org"
+        },
+        {
+          "lang": "te",
+          "name": "తెలుగు",
+          "english": "Telugu",
+          "domain": "te.wikipedia.org"
+        },
+        {
+          "lang": "tet",
+          "name": "tetun",
+          "english": "Tetum",
+          "domain": "tet.wikipedia.org"
+        },
+        {
+          "lang": "tg",
+          "name": "тоҷикӣ",
+          "english": "Tajik",
+          "domain": "tg.wikipedia.org"
+        },
+        {
+          "lang": "th",
+          "name": "ไทย",
+          "english": "Thai",
+          "domain": "th.wikipedia.org"
+        },
+        {
+          "lang": "ti",
+          "name": "ትግርኛ",
+          "english": "Tigrinya",
+          "domain": "ti.wikipedia.org"
+        },
+        {
+          "lang": "tig",
+          "name": "ትግሬ",
+          "english": "Tigre",
+          "domain": "tig.wikipedia.org"
+        },
+        {
+          "lang": "tk",
+          "name": "Türkmençe",
+          "english": "Turkmen",
+          "domain": "tk.wikipedia.org"
+        },
+        {
+          "lang": "tl",
+          "name": "Tagalog",
+          "english": "Tagalog",
+          "domain": "tl.wikipedia.org"
+        },
+        {
+          "lang": "tly",
+          "name": "tolışi",
+          "english": "Talysh",
+          "domain": "tly.wikipedia.org"
+        },
+        {
+          "lang": "tn",
+          "name": "Setswana",
+          "english": "Tswana",
+          "domain": "tn.wikipedia.org"
+        },
+        {
+          "lang": "to",
+          "name": "lea faka-Tonga",
+          "english": "Tongan",
+          "domain": "to.wikipedia.org"
+        },
+        {
+          "lang": "tok",
+          "name": "toki pona",
+          "english": "Toki Pona",
+          "domain": "tok.wikipedia.org"
+        },
+        {
+          "lang": "tpi",
+          "name": "Tok Pisin",
+          "english": "Tok Pisin",
+          "domain": "tpi.wikipedia.org"
+        },
+        {
+          "lang": "tr",
+          "name": "Türkçe",
+          "english": "Turkish",
+          "domain": "tr.wikipedia.org"
+        },
+        {
+          "lang": "trv",
+          "name": "Seediq",
+          "english": "Taroko",
+          "domain": "trv.wikipedia.org"
+        },
+        {
+          "lang": "ts",
+          "name": "Xitsonga",
+          "english": "Tsonga",
+          "domain": "ts.wikipedia.org"
+        },
+        {
+          "lang": "tt",
+          "name": "татарча / tatarça",
+          "english": "Tatar",
+          "domain": "tt.wikipedia.org"
+        },
+        {
+          "lang": "tum",
+          "name": "chiTumbuka",
+          "english": "Tumbuka",
+          "domain": "tum.wikipedia.org"
+        },
+        {
+          "lang": "tw",
+          "name": "Twi",
+          "english": "Twi",
+          "domain": "tw.wikipedia.org"
+        },
+        {
+          "lang": "ty",
+          "name": "reo tahiti",
+          "english": "Tahitian",
+          "domain": "ty.wikipedia.org"
+        },
+        {
+          "lang": "tyv",
+          "name": "тыва дыл",
+          "english": "Tuvinian",
+          "domain": "tyv.wikipedia.org"
+        },
+        {
+          "lang": "udm",
+          "name": "удмурт",
+          "english": "Udmurt",
+          "domain": "udm.wikipedia.org"
+        },
+        {
+          "lang": "ug",
+          "name": "ئۇيغۇرچە / Uyghurche",
+          "english": "Uyghur",
+          "domain": "ug.wikipedia.org"
+        },
+        {
+          "lang": "uk",
+          "name": "українська",
+          "english": "Ukrainian",
+          "domain": "uk.wikipedia.org"
+        },
+        {
+          "lang": "ur",
+          "name": "اردو",
+          "english": "Urdu",
+          "domain": "ur.wikipedia.org"
+        },
+        {
+          "lang": "uz",
+          "name": "oʻzbekcha / ўзбекча",
+          "english": "Uzbek",
+          "domain": "uz.wikipedia.org"
+        },
+        {
+          "lang": "ve",
+          "name": "Tshivenda",
+          "english": "Venda",
+          "domain": "ve.wikipedia.org"
+        },
+        {
+          "lang": "vec",
+          "name": "vèneto",
+          "english": "Venetian",
+          "domain": "vec.wikipedia.org"
+        },
+        {
+          "lang": "vep",
+          "name": "vepsän kel’",
+          "english": "Veps",
+          "domain": "vep.wikipedia.org"
+        },
+        {
+          "lang": "vi",
+          "name": "Tiếng Việt",
+          "english": "Vietnamese",
+          "domain": "vi.wikipedia.org"
+        },
+        {
+          "lang": "vls",
+          "name": "West-Vlams",
+          "english": "West Flemish",
+          "domain": "vls.wikipedia.org"
+        },
+        {
+          "lang": "vo",
+          "name": "Volapük",
+          "english": "Volapük",
+          "domain": "vo.wikipedia.org"
+        },
+        {
+          "lang": "vro",
+          "name": "võro",
+          "english": "Võro",
+          "domain": "fiu-vro.wikipedia.org"
+        },
+        {
+          "lang": "wa",
+          "name": "walon",
+          "english": "Walloon",
+          "domain": "wa.wikipedia.org"
+        },
+        {
+          "lang": "war",
+          "name": "Winaray",
+          "english": "Waray",
+          "domain": "war.wikipedia.org"
+        },
+        {
+          "lang": "wo",
+          "name": "Wolof",
+          "english": "Wolof",
+          "domain": "wo.wikipedia.org"
+        },
+        {
+          "lang": "wuu",
+          "name": "吴语",
+          "english": "Wu",
+          "domain": "wuu.wikipedia.org"
+        },
+        {
+          "lang": "xal",
+          "name": "хальмг",
+          "english": "Kalmyk",
+          "domain": "xal.wikipedia.org"
+        },
+        {
+          "lang": "xh",
+          "name": "isiXhosa",
+          "english": "Xhosa",
+          "domain": "xh.wikipedia.org"
+        },
+        {
+          "lang": "xmf",
+          "name": "მარგალური",
+          "english": "Mingrelian",
+          "domain": "xmf.wikipedia.org"
+        },
+        {
+          "lang": "yi",
+          "name": "ייִדיש",
+          "english": "Yiddish",
+          "domain": "yi.wikipedia.org"
+        },
+        {
+          "lang": "yo",
+          "name": "Yorùbá",
+          "english": "Yoruba",
+          "domain": "yo.wikipedia.org"
+        },
+        {
+          "lang": "yue",
+          "name": "粵語",
+          "english": "Cantonese",
+          "domain": "zh-yue.wikipedia.org"
+        },
+        {
+          "lang": "za",
+          "name": "Vahcuengh",
+          "english": "Zhuang",
+          "domain": "za.wikipedia.org"
+        },
+        {
+          "lang": "zea",
+          "name": "Zeêuws",
+          "english": "Zeelandic",
+          "domain": "zea.wikipedia.org"
+        },
+        {
+          "lang": "zgh",
+          "name": "ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ",
+          "english": "Standard Moroccan Tamazight",
+          "domain": "zgh.wikipedia.org"
+        },
+        {
+          "lang": "zh",
+          "name": "中文",
+          "english": "Chinese",
+          "domain": "zh.wikipedia.org"
+        },
+        {
+          "lang": "zu",
+          "name": "isiZulu",
+          "english": "Zulu",
+          "domain": "zu.wikipedia.org"
+        }
+      ]
+    },
+    {
+      "id": "wiktionary",
+      "name": "Wiktionary",
+      "type": "mediawiki",
+      "capabilities": {
+        "extracts": true,
+        "pageImages": true
+      },
+      "generatedFrom": {
+        "sitematrix": "wiktionary"
+      },
+      "sites": [
+        {
+          "lang": "af",
+          "name": "Afrikaans",
+          "english": "Afrikaans",
+          "domain": "af.wiktionary.org"
+        },
+        {
+          "lang": "am",
+          "name": "አማርኛ",
+          "english": "Amharic",
+          "domain": "am.wiktionary.org"
+        },
+        {
+          "lang": "an",
+          "name": "aragonés",
+          "english": "Aragonese",
+          "domain": "an.wiktionary.org"
+        },
+        {
+          "lang": "ang",
+          "name": "Ænglisc",
+          "english": "Old English",
+          "domain": "ang.wiktionary.org"
+        },
+        {
+          "lang": "ar",
+          "name": "العربية",
+          "english": "Arabic",
+          "domain": "ar.wiktionary.org"
+        },
+        {
+          "lang": "ast",
+          "name": "asturianu",
+          "english": "Asturian",
+          "domain": "ast.wiktionary.org"
+        },
+        {
+          "lang": "ay",
+          "name": "Aymar aru",
+          "english": "Aymara",
+          "domain": "ay.wiktionary.org"
+        },
+        {
+          "lang": "az",
+          "name": "azərbaycanca",
+          "english": "Azerbaijani",
+          "domain": "az.wiktionary.org"
+        },
+        {
+          "lang": "bcl",
+          "name": "Bikol Central",
+          "english": "Central Bikol",
+          "domain": "bcl.wiktionary.org"
+        },
+        {
+          "lang": "be",
+          "name": "беларуская",
+          "english": "Belarusian",
+          "domain": "be.wiktionary.org"
+        },
+        {
+          "lang": "bew",
+          "name": "Betawi",
+          "english": "Betawi",
+          "domain": "bew.wiktionary.org"
+        },
+        {
+          "lang": "bg",
+          "name": "български",
+          "english": "Bulgarian",
+          "domain": "bg.wiktionary.org"
+        },
+        {
+          "lang": "bjn",
+          "name": "Banjar",
+          "english": "Banjar",
+          "domain": "bjn.wiktionary.org"
+        },
+        {
+          "lang": "blk",
+          "name": "ပအိုဝ်ႏဘာႏသာႏ",
+          "english": "Pa'O",
+          "domain": "blk.wiktionary.org"
+        },
+        {
+          "lang": "bn",
+          "name": "বাংলা",
+          "english": "Bangla",
+          "domain": "bn.wiktionary.org"
+        },
+        {
+          "lang": "br",
+          "name": "brezhoneg",
+          "english": "Breton",
+          "domain": "br.wiktionary.org"
+        },
+        {
+          "lang": "btm",
+          "name": "Batak Mandailing",
+          "english": "Batak Mandailing",
+          "domain": "btm.wiktionary.org"
+        },
+        {
+          "lang": "ca",
+          "name": "català",
+          "english": "Catalan",
+          "domain": "ca.wiktionary.org"
+        },
+        {
+          "lang": "chr",
+          "name": "ᏣᎳᎩ",
+          "english": "Cherokee",
+          "domain": "chr.wiktionary.org"
+        },
+        {
+          "lang": "ckb",
+          "name": "کوردی",
+          "english": "Central Kurdish",
+          "domain": "ckb.wiktionary.org"
+        },
+        {
+          "lang": "co",
+          "name": "corsu",
+          "english": "Corsican",
+          "domain": "co.wiktionary.org"
+        },
+        {
+          "lang": "cs",
+          "name": "čeština",
+          "english": "Czech",
+          "domain": "cs.wiktionary.org"
+        },
+        {
+          "lang": "csb",
+          "name": "kaszëbsczi",
+          "english": "Kashubian",
+          "domain": "csb.wiktionary.org"
+        },
+        {
+          "lang": "cy",
+          "name": "Cymraeg",
+          "english": "Welsh",
+          "domain": "cy.wiktionary.org"
+        },
+        {
+          "lang": "da",
+          "name": "dansk",
+          "english": "Danish",
+          "domain": "da.wiktionary.org"
+        },
+        {
+          "lang": "de",
+          "name": "Deutsch",
+          "english": "German",
+          "domain": "de.wiktionary.org"
+        },
+        {
+          "lang": "diq",
+          "name": "Zazaki",
+          "english": "Dimli",
+          "domain": "diq.wiktionary.org"
+        },
+        {
+          "lang": "dv",
+          "name": "ދިވެހިބަސް",
+          "english": "Divehi",
+          "domain": "dv.wiktionary.org"
+        },
+        {
+          "lang": "el",
+          "name": "Ελληνικά",
+          "english": "Greek",
+          "domain": "el.wiktionary.org"
+        },
+        {
+          "lang": "en",
+          "name": "English",
+          "english": "English",
+          "domain": "en.wiktionary.org"
+        },
+        {
+          "lang": "eo",
+          "name": "Esperanto",
+          "english": "Esperanto",
+          "domain": "eo.wiktionary.org"
+        },
+        {
+          "lang": "es",
+          "name": "español",
+          "english": "Spanish",
+          "domain": "es.wiktionary.org"
+        },
+        {
+          "lang": "et",
+          "name": "eesti",
+          "english": "Estonian",
+          "domain": "et.wiktionary.org"
+        },
+        {
+          "lang": "eu",
+          "name": "euskara",
+          "english": "Basque",
+          "domain": "eu.wiktionary.org"
+        },
+        {
+          "lang": "fa",
+          "name": "فارسی",
+          "english": "Persian",
+          "domain": "fa.wiktionary.org"
+        },
+        {
+          "lang": "fi",
+          "name": "suomi",
+          "english": "Finnish",
+          "domain": "fi.wiktionary.org"
+        },
+        {
+          "lang": "fj",
+          "name": "Na Vosa Vakaviti",
+          "english": "Fijian",
+          "domain": "fj.wiktionary.org"
+        },
+        {
+          "lang": "fo",
+          "name": "føroyskt",
+          "english": "Faroese",
+          "domain": "fo.wiktionary.org"
+        },
+        {
+          "lang": "fr",
+          "name": "français",
+          "english": "French",
+          "domain": "fr.wiktionary.org"
+        },
+        {
+          "lang": "fy",
+          "name": "Frysk",
+          "english": "Western Frisian",
+          "domain": "fy.wiktionary.org"
+        },
+        {
+          "lang": "ga",
+          "name": "Gaeilge",
+          "english": "Irish",
+          "domain": "ga.wiktionary.org"
+        },
+        {
+          "lang": "gd",
+          "name": "Gàidhlig",
+          "english": "Scottish Gaelic",
+          "domain": "gd.wiktionary.org"
+        },
+        {
+          "lang": "gl",
+          "name": "galego",
+          "english": "Galician",
+          "domain": "gl.wiktionary.org"
+        },
+        {
+          "lang": "gn",
+          "name": "Avañe'ẽ",
+          "english": "Guarani",
+          "domain": "gn.wiktionary.org"
+        },
+        {
+          "lang": "gom",
+          "name": "गोंयची कोंकणी / Gõychi Konknni",
+          "english": "Goan Konkani",
+          "domain": "gom.wiktionary.org"
+        },
+        {
+          "lang": "gor",
+          "name": "Bahasa Hulontalo",
+          "english": "Gorontalo",
+          "domain": "gor.wiktionary.org"
+        },
+        {
+          "lang": "gu",
+          "name": "ગુજરાતી",
+          "english": "Gujarati",
+          "domain": "gu.wiktionary.org"
+        },
+        {
+          "lang": "guw",
+          "name": "gungbe",
+          "english": "Gun",
+          "domain": "guw.wiktionary.org"
+        },
+        {
+          "lang": "gv",
+          "name": "Gaelg",
+          "english": "Manx",
+          "domain": "gv.wiktionary.org"
+        },
+        {
+          "lang": "ha",
+          "name": "Hausa",
+          "english": "Hausa",
+          "domain": "ha.wiktionary.org"
+        },
+        {
+          "lang": "he",
+          "name": "עברית",
+          "english": "Hebrew",
+          "domain": "he.wiktionary.org"
+        },
+        {
+          "lang": "hi",
+          "name": "हिन्दी",
+          "english": "Hindi",
+          "domain": "hi.wiktionary.org"
+        },
+        {
+          "lang": "hif",
+          "name": "Fiji Hindi",
+          "english": "Fiji Hindi",
+          "domain": "hif.wiktionary.org"
+        },
+        {
+          "lang": "hr",
+          "name": "hrvatski",
+          "english": "Croatian",
+          "domain": "hr.wiktionary.org"
+        },
+        {
+          "lang": "hsb",
+          "name": "hornjoserbsce",
+          "english": "Upper Sorbian",
+          "domain": "hsb.wiktionary.org"
+        },
+        {
+          "lang": "hu",
+          "name": "magyar",
+          "english": "Hungarian",
+          "domain": "hu.wiktionary.org"
+        },
+        {
+          "lang": "hy",
+          "name": "հայերեն",
+          "english": "Armenian",
+          "domain": "hy.wiktionary.org"
+        },
+        {
+          "lang": "ia",
+          "name": "interlingua",
+          "english": "Interlingua",
+          "domain": "ia.wiktionary.org"
+        },
+        {
+          "lang": "id",
+          "name": "Bahasa Indonesia",
+          "english": "Indonesian",
+          "domain": "id.wiktionary.org"
+        },
+        {
+          "lang": "ie",
+          "name": "Interlingue",
+          "english": "Interlingue",
+          "domain": "ie.wiktionary.org"
+        },
+        {
+          "lang": "ig",
+          "name": "Igbo",
+          "english": "Igbo",
+          "domain": "ig.wiktionary.org"
+        },
+        {
+          "lang": "io",
+          "name": "Ido",
+          "english": "Ido",
+          "domain": "io.wiktionary.org"
+        },
+        {
+          "lang": "is",
+          "name": "íslenska",
+          "english": "Icelandic",
+          "domain": "is.wiktionary.org"
+        },
+        {
+          "lang": "it",
+          "name": "italiano",
+          "english": "Italian",
+          "domain": "it.wiktionary.org"
+        },
+        {
+          "lang": "iu",
+          "name": "ᐃᓄᒃᑎᑐᑦ / inuktitut",
+          "english": "Inuktitut",
+          "domain": "iu.wiktionary.org"
+        },
+        {
+          "lang": "ja",
+          "name": "日本語",
+          "english": "Japanese",
+          "domain": "ja.wiktionary.org"
+        },
+        {
+          "lang": "jbo",
+          "name": "la .lojban.",
+          "english": "Lojban",
+          "domain": "jbo.wiktionary.org"
+        },
+        {
+          "lang": "jv",
+          "name": "Jawa",
+          "english": "Javanese",
+          "domain": "jv.wiktionary.org"
+        },
+        {
+          "lang": "ka",
+          "name": "ქართული",
+          "english": "Georgian",
+          "domain": "ka.wiktionary.org"
+        },
+        {
+          "lang": "kaa",
+          "name": "Qaraqalpaqsha",
+          "english": "Kara-Kalpak",
+          "domain": "kaa.wiktionary.org"
+        },
+        {
+          "lang": "kbd",
+          "name": "адыгэбзэ",
+          "english": "Kabardian",
+          "domain": "kbd.wiktionary.org"
+        },
+        {
+          "lang": "kcg",
+          "name": "Tyap",
+          "english": "Tyap",
+          "domain": "kcg.wiktionary.org"
+        },
+        {
+          "lang": "kk",
+          "name": "қазақша",
+          "english": "Kazakh",
+          "domain": "kk.wiktionary.org"
+        },
+        {
+          "lang": "kl",
+          "name": "kalaallisut",
+          "english": "Kalaallisut",
+          "domain": "kl.wiktionary.org"
+        },
+        {
+          "lang": "km",
+          "name": "ភាសាខ្មែរ",
+          "english": "Khmer",
+          "domain": "km.wiktionary.org"
+        },
+        {
+          "lang": "kn",
+          "name": "ಕನ್ನಡ",
+          "english": "Kannada",
+          "domain": "kn.wiktionary.org"
+        },
+        {
+          "lang": "ko",
+          "name": "한국어",
+          "english": "Korean",
+          "domain": "ko.wiktionary.org"
+        },
+        {
+          "lang": "ks",
+          "name": "کٲشُر",
+          "english": "Kashmiri",
+          "domain": "ks.wiktionary.org"
+        },
+        {
+          "lang": "ku",
+          "name": "kurdî",
+          "english": "Kurdish",
+          "domain": "ku.wiktionary.org"
+        },
+        {
+          "lang": "kw",
+          "name": "kernowek",
+          "english": "Cornish",
+          "domain": "kw.wiktionary.org"
+        },
+        {
+          "lang": "ky",
+          "name": "кыргызча",
+          "english": "Kyrgyz",
+          "domain": "ky.wiktionary.org"
+        },
+        {
+          "lang": "la",
+          "name": "Latina",
+          "english": "Latin",
+          "domain": "la.wiktionary.org"
+        },
+        {
+          "lang": "lb",
+          "name": "Lëtzebuergesch",
+          "english": "Luxembourgish",
+          "domain": "lb.wiktionary.org"
+        },
+        {
+          "lang": "li",
+          "name": "Limburgs",
+          "english": "Limburgish",
+          "domain": "li.wiktionary.org"
+        },
+        {
+          "lang": "lmo",
+          "name": "lombard",
+          "english": "Lombard",
+          "domain": "lmo.wiktionary.org"
+        },
+        {
+          "lang": "ln",
+          "name": "lingála",
+          "english": "Lingala",
+          "domain": "ln.wiktionary.org"
+        },
+        {
+          "lang": "lo",
+          "name": "ລາວ",
+          "english": "Lao",
+          "domain": "lo.wiktionary.org"
+        },
+        {
+          "lang": "lt",
+          "name": "lietuvių",
+          "english": "Lithuanian",
+          "domain": "lt.wiktionary.org"
+        },
+        {
+          "lang": "lv",
+          "name": "latviešu",
+          "english": "Latvian",
+          "domain": "lv.wiktionary.org"
+        },
+        {
+          "lang": "mad",
+          "name": "Madhurâ",
+          "english": "Madurese",
+          "domain": "mad.wiktionary.org"
+        },
+        {
+          "lang": "mg",
+          "name": "Malagasy",
+          "english": "Malagasy",
+          "domain": "mg.wiktionary.org"
+        },
+        {
+          "lang": "mi",
+          "name": "Māori",
+          "english": "Māori",
+          "domain": "mi.wiktionary.org"
+        },
+        {
+          "lang": "min",
+          "name": "Minangkabau",
+          "english": "Minangkabau",
+          "domain": "min.wiktionary.org"
+        },
+        {
+          "lang": "mk",
+          "name": "македонски",
+          "english": "Macedonian",
+          "domain": "mk.wiktionary.org"
+        },
+        {
+          "lang": "ml",
+          "name": "മലയാളം",
+          "english": "Malayalam",
+          "domain": "ml.wiktionary.org"
+        },
+        {
+          "lang": "mn",
+          "name": "монгол",
+          "english": "Mongolian",
+          "domain": "mn.wiktionary.org"
+        },
+        {
+          "lang": "mni",
+          "name": "ꯃꯤꯇꯩ ꯂꯣꯟ",
+          "english": "Manipuri",
+          "domain": "mni.wiktionary.org"
+        },
+        {
+          "lang": "mnw",
+          "name": "ဘာသာမန်",
+          "english": "Mon",
+          "domain": "mnw.wiktionary.org"
+        },
+        {
+          "lang": "mr",
+          "name": "मराठी",
+          "english": "Marathi",
+          "domain": "mr.wiktionary.org"
+        },
+        {
+          "lang": "ms",
+          "name": "Bahasa Melayu",
+          "english": "Malay",
+          "domain": "ms.wiktionary.org"
+        },
+        {
+          "lang": "mt",
+          "name": "Malti",
+          "english": "Maltese",
+          "domain": "mt.wiktionary.org"
+        },
+        {
+          "lang": "my",
+          "name": "မြန်မာဘာသာ",
+          "english": "Burmese",
+          "domain": "my.wiktionary.org"
+        },
+        {
+          "lang": "na",
+          "name": "Dorerin Naoero",
+          "english": "Nauru",
+          "domain": "na.wiktionary.org"
+        },
+        {
+          "lang": "nah",
+          "name": "Nāhuatl",
+          "english": "Nahuatl",
+          "domain": "nah.wiktionary.org"
+        },
+        {
+          "lang": "nan",
+          "name": "閩南語 / Bân-lâm-gí",
+          "english": "Minnan",
+          "domain": "zh-min-nan.wiktionary.org"
+        },
+        {
+          "lang": "nds",
+          "name": "Plattdüütsch",
+          "english": "Low German",
+          "domain": "nds.wiktionary.org"
+        },
+        {
+          "lang": "ne",
+          "name": "नेपाली",
+          "english": "Nepali",
+          "domain": "ne.wiktionary.org"
+        },
+        {
+          "lang": "nia",
+          "name": "Li Niha",
+          "english": "Nias",
+          "domain": "nia.wiktionary.org"
+        },
+        {
+          "lang": "nl",
+          "name": "Nederlands",
+          "english": "Dutch",
+          "domain": "nl.wiktionary.org"
+        },
+        {
+          "lang": "nn",
+          "name": "norsk nynorsk",
+          "english": "Norwegian Nynorsk",
+          "domain": "nn.wiktionary.org"
+        },
+        {
+          "lang": "no",
+          "name": "norsk",
+          "english": "Norwegian",
+          "domain": "no.wiktionary.org"
+        },
+        {
+          "lang": "oc",
+          "name": "occitan",
+          "english": "Occitan",
+          "domain": "oc.wiktionary.org"
+        },
+        {
+          "lang": "om",
+          "name": "Oromoo",
+          "english": "Oromo",
+          "domain": "om.wiktionary.org"
+        },
+        {
+          "lang": "or",
+          "name": "ଓଡ଼ିଆ",
+          "english": "Odia",
+          "domain": "or.wiktionary.org"
+        },
+        {
+          "lang": "pa",
+          "name": "ਪੰਜਾਬੀ",
+          "english": "Punjabi",
+          "domain": "pa.wiktionary.org"
+        },
+        {
+          "lang": "pl",
+          "name": "polski",
+          "english": "Polish",
+          "domain": "pl.wiktionary.org"
+        },
+        {
+          "lang": "pnb",
+          "name": "پنجابی",
+          "english": "Western Punjabi",
+          "domain": "pnb.wiktionary.org"
+        },
+        {
+          "lang": "ps",
+          "name": "پښتو",
+          "english": "Pashto",
+          "domain": "ps.wiktionary.org"
+        },
+        {
+          "lang": "pt",
+          "name": "português",
+          "english": "Portuguese",
+          "domain": "pt.wiktionary.org"
+        },
+        {
+          "lang": "qu",
+          "name": "Runa Simi",
+          "english": "Quechua",
+          "domain": "qu.wiktionary.org"
+        },
+        {
+          "lang": "ro",
+          "name": "română",
+          "english": "Romanian",
+          "domain": "ro.wiktionary.org"
+        },
+        {
+          "lang": "ru",
+          "name": "русский",
+          "english": "Russian",
+          "domain": "ru.wiktionary.org"
+        },
+        {
+          "lang": "rup",
+          "name": "armãneashti",
+          "english": "Aromanian",
+          "domain": "roa-rup.wiktionary.org"
+        },
+        {
+          "lang": "rw",
+          "name": "Ikinyarwanda",
+          "english": "Kinyarwanda",
+          "domain": "rw.wiktionary.org"
+        },
+        {
+          "lang": "sa",
+          "name": "संस्कृतम्",
+          "english": "Sanskrit",
+          "domain": "sa.wiktionary.org"
+        },
+        {
+          "lang": "sat",
+          "name": "ᱥᱟᱱᱛᱟᱲᱤ",
+          "english": "Santali",
+          "domain": "sat.wiktionary.org"
+        },
+        {
+          "lang": "scn",
+          "name": "sicilianu",
+          "english": "Sicilian",
+          "domain": "scn.wiktionary.org"
+        },
+        {
+          "lang": "sd",
+          "name": "سنڌي",
+          "english": "Sindhi",
+          "domain": "sd.wiktionary.org"
+        },
+        {
+          "lang": "sg",
+          "name": "Sängö",
+          "english": "Sango",
+          "domain": "sg.wiktionary.org"
+        },
+        {
+          "lang": "sh",
+          "name": "srpskohrvatski / српскохрватски",
+          "english": "Serbo-Croatian",
+          "domain": "sh.wiktionary.org"
+        },
+        {
+          "lang": "shn",
+          "name": "တႆး",
+          "english": "Shan",
+          "domain": "shn.wiktionary.org"
+        },
+        {
+          "lang": "shy",
+          "name": "tacawit",
+          "english": "Shawiya",
+          "domain": "shy.wiktionary.org"
+        },
+        {
+          "lang": "si",
+          "name": "සිංහල",
+          "english": "Sinhala",
+          "domain": "si.wiktionary.org"
+        },
+        {
+          "lang": "simple",
+          "name": "Simple English",
+          "english": "Simple English",
+          "domain": "simple.wiktionary.org"
+        },
+        {
+          "lang": "sk",
+          "name": "slovenčina",
+          "english": "Slovak",
+          "domain": "sk.wiktionary.org"
+        },
+        {
+          "lang": "skr",
+          "name": "سرائیکی",
+          "english": "Saraiki",
+          "domain": "skr.wiktionary.org"
+        },
+        {
+          "lang": "sl",
+          "name": "slovenščina",
+          "english": "Slovenian",
+          "domain": "sl.wiktionary.org"
+        },
+        {
+          "lang": "sm",
+          "name": "Gagana Samoa",
+          "english": "Samoan",
+          "domain": "sm.wiktionary.org"
+        },
+        {
+          "lang": "so",
+          "name": "Soomaaliga",
+          "english": "Somali",
+          "domain": "so.wiktionary.org"
+        },
+        {
+          "lang": "sq",
+          "name": "shqip",
+          "english": "Albanian",
+          "domain": "sq.wiktionary.org"
+        },
+        {
+          "lang": "sr",
+          "name": "српски / srpski",
+          "english": "Serbian",
+          "domain": "sr.wiktionary.org"
+        },
+        {
+          "lang": "ss",
+          "name": "SiSwati",
+          "english": "Swati",
+          "domain": "ss.wiktionary.org"
+        },
+        {
+          "lang": "st",
+          "name": "Sesotho",
+          "english": "Southern Sotho",
+          "domain": "st.wiktionary.org"
+        },
+        {
+          "lang": "su",
+          "name": "Sunda",
+          "english": "Sundanese",
+          "domain": "su.wiktionary.org"
+        },
+        {
+          "lang": "sv",
+          "name": "svenska",
+          "english": "Swedish",
+          "domain": "sv.wiktionary.org"
+        },
+        {
+          "lang": "sw",
+          "name": "Kiswahili",
+          "english": "Swahili",
+          "domain": "sw.wiktionary.org"
+        },
+        {
+          "lang": "ta",
+          "name": "தமிழ்",
+          "english": "Tamil",
+          "domain": "ta.wiktionary.org"
+        },
+        {
+          "lang": "tcy",
+          "name": "ತುಳು",
+          "english": "Tulu",
+          "domain": "tcy.wiktionary.org"
+        },
+        {
+          "lang": "te",
+          "name": "తెలుగు",
+          "english": "Telugu",
+          "domain": "te.wiktionary.org"
+        },
+        {
+          "lang": "tg",
+          "name": "тоҷикӣ",
+          "english": "Tajik",
+          "domain": "tg.wiktionary.org"
+        },
+        {
+          "lang": "th",
+          "name": "ไทย",
+          "english": "Thai",
+          "domain": "th.wiktionary.org"
+        },
+        {
+          "lang": "ti",
+          "name": "ትግርኛ",
+          "english": "Tigrinya",
+          "domain": "ti.wiktionary.org"
+        },
+        {
+          "lang": "tk",
+          "name": "Türkmençe",
+          "english": "Turkmen",
+          "domain": "tk.wiktionary.org"
+        },
+        {
+          "lang": "tl",
+          "name": "Tagalog",
+          "english": "Tagalog",
+          "domain": "tl.wiktionary.org"
+        },
+        {
+          "lang": "tn",
+          "name": "Setswana",
+          "english": "Tswana",
+          "domain": "tn.wiktionary.org"
+        },
+        {
+          "lang": "tpi",
+          "name": "Tok Pisin",
+          "english": "Tok Pisin",
+          "domain": "tpi.wiktionary.org"
+        },
+        {
+          "lang": "tr",
+          "name": "Türkçe",
+          "english": "Turkish",
+          "domain": "tr.wiktionary.org"
+        },
+        {
+          "lang": "ts",
+          "name": "Xitsonga",
+          "english": "Tsonga",
+          "domain": "ts.wiktionary.org"
+        },
+        {
+          "lang": "tt",
+          "name": "татарча / tatarça",
+          "english": "Tatar",
+          "domain": "tt.wiktionary.org"
+        },
+        {
+          "lang": "ug",
+          "name": "ئۇيغۇرچە / Uyghurche",
+          "english": "Uyghur",
+          "domain": "ug.wiktionary.org"
+        },
+        {
+          "lang": "uk",
+          "name": "українська",
+          "english": "Ukrainian",
+          "domain": "uk.wiktionary.org"
+        },
+        {
+          "lang": "ur",
+          "name": "اردو",
+          "english": "Urdu",
+          "domain": "ur.wiktionary.org"
+        },
+        {
+          "lang": "uz",
+          "name": "oʻzbekcha / ўзбекча",
+          "english": "Uzbek",
+          "domain": "uz.wiktionary.org"
+        },
+        {
+          "lang": "vec",
+          "name": "vèneto",
+          "english": "Venetian",
+          "domain": "vec.wiktionary.org"
+        },
+        {
+          "lang": "vi",
+          "name": "Tiếng Việt",
+          "english": "Vietnamese",
+          "domain": "vi.wiktionary.org"
+        },
+        {
+          "lang": "vo",
+          "name": "Volapük",
+          "english": "Volapük",
+          "domain": "vo.wiktionary.org"
+        },
+        {
+          "lang": "wa",
+          "name": "walon",
+          "english": "Walloon",
+          "domain": "wa.wiktionary.org"
+        },
+        {
+          "lang": "wo",
+          "name": "Wolof",
+          "english": "Wolof",
+          "domain": "wo.wiktionary.org"
+        },
+        {
+          "lang": "yi",
+          "name": "ייִדיש",
+          "english": "Yiddish",
+          "domain": "yi.wiktionary.org"
+        },
+        {
+          "lang": "yue",
+          "name": "粵語",
+          "english": "Cantonese",
+          "domain": "yue.wiktionary.org"
+        },
+        {
+          "lang": "zgh",
+          "name": "ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ",
+          "english": "Standard Moroccan Tamazight",
+          "domain": "zgh.wiktionary.org"
+        },
+        {
+          "lang": "zh",
+          "name": "中文",
+          "english": "Chinese",
+          "domain": "zh.wiktionary.org"
+        },
+        {
+          "lang": "zu",
+          "name": "isiZulu",
+          "english": "Zulu",
+          "domain": "zu.wiktionary.org"
+        }
+      ]
+    },
+    {
+      "id": "wikisource",
+      "name": "Wikisource",
+      "type": "mediawiki",
+      "capabilities": {
+        "extracts": true,
+        "pageImages": true
+      },
+      "generatedFrom": {
+        "sitematrix": "wikisource"
+      },
+      "sites": [
+        {
+          "lang": "ar",
+          "name": "العربية",
+          "english": "Arabic",
+          "domain": "ar.wikisource.org"
+        },
+        {
+          "lang": "as",
+          "name": "অসমীয়া",
+          "english": "Assamese",
+          "domain": "as.wikisource.org"
+        },
+        {
+          "lang": "az",
+          "name": "azərbaycanca",
+          "english": "Azerbaijani",
+          "domain": "az.wikisource.org"
+        },
+        {
+          "lang": "ban",
+          "name": "Basa Bali",
+          "english": "Balinese",
+          "domain": "ban.wikisource.org"
+        },
+        {
+          "lang": "bcl",
+          "name": "Bikol Central",
+          "english": "Central Bikol",
+          "domain": "bcl.wikisource.org"
+        },
+        {
+          "lang": "be",
+          "name": "беларуская",
+          "english": "Belarusian",
+          "domain": "be.wikisource.org"
+        },
+        {
+          "lang": "bg",
+          "name": "български",
+          "english": "Bulgarian",
+          "domain": "bg.wikisource.org"
+        },
+        {
+          "lang": "bn",
+          "name": "বাংলা",
+          "english": "Bangla",
+          "domain": "bn.wikisource.org"
+        },
+        {
+          "lang": "br",
+          "name": "brezhoneg",
+          "english": "Breton",
+          "domain": "br.wikisource.org"
+        },
+        {
+          "lang": "bs",
+          "name": "bosanski",
+          "english": "Bosnian",
+          "domain": "bs.wikisource.org"
+        },
+        {
+          "lang": "ca",
+          "name": "català",
+          "english": "Catalan",
+          "domain": "ca.wikisource.org"
+        },
+        {
+          "lang": "cs",
+          "name": "čeština",
+          "english": "Czech",
+          "domain": "cs.wikisource.org"
+        },
+        {
+          "lang": "cy",
+          "name": "Cymraeg",
+          "english": "Welsh",
+          "domain": "cy.wikisource.org"
+        },
+        {
+          "lang": "da",
+          "name": "dansk",
+          "english": "Danish",
+          "domain": "da.wikisource.org"
+        },
+        {
+          "lang": "de",
+          "name": "Deutsch",
+          "english": "German",
+          "domain": "de.wikisource.org"
+        },
+        {
+          "lang": "el",
+          "name": "Ελληνικά",
+          "english": "Greek",
+          "domain": "el.wikisource.org"
+        },
+        {
+          "lang": "en",
+          "name": "English",
+          "english": "English",
+          "domain": "en.wikisource.org"
+        },
+        {
+          "lang": "eo",
+          "name": "Esperanto",
+          "english": "Esperanto",
+          "domain": "eo.wikisource.org"
+        },
+        {
+          "lang": "es",
+          "name": "español",
+          "english": "Spanish",
+          "domain": "es.wikisource.org"
+        },
+        {
+          "lang": "et",
+          "name": "eesti",
+          "english": "Estonian",
+          "domain": "et.wikisource.org"
+        },
+        {
+          "lang": "eu",
+          "name": "euskara",
+          "english": "Basque",
+          "domain": "eu.wikisource.org"
+        },
+        {
+          "lang": "fa",
+          "name": "فارسی",
+          "english": "Persian",
+          "domain": "fa.wikisource.org"
+        },
+        {
+          "lang": "fi",
+          "name": "suomi",
+          "english": "Finnish",
+          "domain": "fi.wikisource.org"
+        },
+        {
+          "lang": "fo",
+          "name": "føroyskt",
+          "english": "Faroese",
+          "domain": "fo.wikisource.org"
+        },
+        {
+          "lang": "fr",
+          "name": "français",
+          "english": "French",
+          "domain": "fr.wikisource.org"
+        },
+        {
+          "lang": "gl",
+          "name": "galego",
+          "english": "Galician",
+          "domain": "gl.wikisource.org"
+        },
+        {
+          "lang": "gu",
+          "name": "ગુજરાતી",
+          "english": "Gujarati",
+          "domain": "gu.wikisource.org"
+        },
+        {
+          "lang": "he",
+          "name": "עברית",
+          "english": "Hebrew",
+          "domain": "he.wikisource.org"
+        },
+        {
+          "lang": "hi",
+          "name": "हिन्दी",
+          "english": "Hindi",
+          "domain": "hi.wikisource.org"
+        },
+        {
+          "lang": "hr",
+          "name": "hrvatski",
+          "english": "Croatian",
+          "domain": "hr.wikisource.org"
+        },
+        {
+          "lang": "hu",
+          "name": "magyar",
+          "english": "Hungarian",
+          "domain": "hu.wikisource.org"
+        },
+        {
+          "lang": "hy",
+          "name": "հայերեն",
+          "english": "Armenian",
+          "domain": "hy.wikisource.org"
+        },
+        {
+          "lang": "id",
+          "name": "Bahasa Indonesia",
+          "english": "Indonesian",
+          "domain": "id.wikisource.org"
+        },
+        {
+          "lang": "is",
+          "name": "íslenska",
+          "english": "Icelandic",
+          "domain": "is.wikisource.org"
+        },
+        {
+          "lang": "it",
+          "name": "italiano",
+          "english": "Italian",
+          "domain": "it.wikisource.org"
+        },
+        {
+          "lang": "ja",
+          "name": "日本語",
+          "english": "Japanese",
+          "domain": "ja.wikisource.org"
+        },
+        {
+          "lang": "jv",
+          "name": "Jawa",
+          "english": "Javanese",
+          "domain": "jv.wikisource.org"
+        },
+        {
+          "lang": "ka",
+          "name": "ქართული",
+          "english": "Georgian",
+          "domain": "ka.wikisource.org"
+        },
+        {
+          "lang": "kn",
+          "name": "ಕನ್ನಡ",
+          "english": "Kannada",
+          "domain": "kn.wikisource.org"
+        },
+        {
+          "lang": "ko",
+          "name": "한국어",
+          "english": "Korean",
+          "domain": "ko.wikisource.org"
+        },
+        {
+          "lang": "la",
+          "name": "Latina",
+          "english": "Latin",
+          "domain": "la.wikisource.org"
+        },
+        {
+          "lang": "li",
+          "name": "Limburgs",
+          "english": "Limburgish",
+          "domain": "li.wikisource.org"
+        },
+        {
+          "lang": "lij",
+          "name": "Ligure",
+          "english": "Ligurian",
+          "domain": "lij.wikisource.org"
+        },
+        {
+          "lang": "lt",
+          "name": "lietuvių",
+          "english": "Lithuanian",
+          "domain": "lt.wikisource.org"
+        },
+        {
+          "lang": "mad",
+          "name": "Madhurâ",
+          "english": "Madurese",
+          "domain": "mad.wikisource.org"
+        },
+        {
+          "lang": "min",
+          "name": "Minangkabau",
+          "english": "Minangkabau",
+          "domain": "min.wikisource.org"
+        },
+        {
+          "lang": "mk",
+          "name": "македонски",
+          "english": "Macedonian",
+          "domain": "mk.wikisource.org"
+        },
+        {
+          "lang": "ml",
+          "name": "മലയാളം",
+          "english": "Malayalam",
+          "domain": "ml.wikisource.org"
+        },
+        {
+          "lang": "mr",
+          "name": "मराठी",
+          "english": "Marathi",
+          "domain": "mr.wikisource.org"
+        },
+        {
+          "lang": "ms",
+          "name": "Bahasa Melayu",
+          "english": "Malay",
+          "domain": "ms.wikisource.org"
+        },
+        {
+          "lang": "my",
+          "name": "မြန်မာဘာသာ",
+          "english": "Burmese",
+          "domain": "my.wikisource.org"
+        },
+        {
+          "lang": "nan",
+          "name": "閩南語 / Bân-lâm-gí",
+          "english": "Minnan",
+          "domain": "zh-min-nan.wikisource.org"
+        },
+        {
+          "lang": "nap",
+          "name": "Napulitano",
+          "english": "Neapolitan",
+          "domain": "nap.wikisource.org"
+        },
+        {
+          "lang": "nl",
+          "name": "Nederlands",
+          "english": "Dutch",
+          "domain": "nl.wikisource.org"
+        },
+        {
+          "lang": "no",
+          "name": "norsk",
+          "english": "Norwegian",
+          "domain": "no.wikisource.org"
+        },
+        {
+          "lang": "or",
+          "name": "ଓଡ଼ିଆ",
+          "english": "Odia",
+          "domain": "or.wikisource.org"
+        },
+        {
+          "lang": "pa",
+          "name": "ਪੰਜਾਬੀ",
+          "english": "Punjabi",
+          "domain": "pa.wikisource.org"
+        },
+        {
+          "lang": "pl",
+          "name": "polski",
+          "english": "Polish",
+          "domain": "pl.wikisource.org"
+        },
+        {
+          "lang": "pms",
+          "name": "Piemontèis",
+          "english": "Piedmontese",
+          "domain": "pms.wikisource.org"
+        },
+        {
+          "lang": "pt",
+          "name": "português",
+          "english": "Portuguese",
+          "domain": "pt.wikisource.org"
+        },
+        {
+          "lang": "ro",
+          "name": "română",
+          "english": "Romanian",
+          "domain": "ro.wikisource.org"
+        },
+        {
+          "lang": "ru",
+          "name": "русский",
+          "english": "Russian",
+          "domain": "ru.wikisource.org"
+        },
+        {
+          "lang": "sa",
+          "name": "संस्कृतम्",
+          "english": "Sanskrit",
+          "domain": "sa.wikisource.org"
+        },
+        {
+          "lang": "sah",
+          "name": "саха тыла",
+          "english": "Yakut",
+          "domain": "sah.wikisource.org"
+        },
+        {
+          "lang": "sk",
+          "name": "slovenčina",
+          "english": "Slovak",
+          "domain": "sk.wikisource.org"
+        },
+        {
+          "lang": "sl",
+          "name": "slovenščina",
+          "english": "Slovenian",
+          "domain": "sl.wikisource.org"
+        },
+        {
+          "lang": "sr",
+          "name": "српски / srpski",
+          "english": "Serbian",
+          "domain": "sr.wikisource.org"
+        },
+        {
+          "lang": "su",
+          "name": "Sunda",
+          "english": "Sundanese",
+          "domain": "su.wikisource.org"
+        },
+        {
+          "lang": "sv",
+          "name": "svenska",
+          "english": "Swedish",
+          "domain": "sv.wikisource.org"
+        },
+        {
+          "lang": "ta",
+          "name": "தமிழ்",
+          "english": "Tamil",
+          "domain": "ta.wikisource.org"
+        },
+        {
+          "lang": "tcy",
+          "name": "ತುಳು",
+          "english": "Tulu",
+          "domain": "tcy.wikisource.org"
+        },
+        {
+          "lang": "te",
+          "name": "తెలుగు",
+          "english": "Telugu",
+          "domain": "te.wikisource.org"
+        },
+        {
+          "lang": "th",
+          "name": "ไทย",
+          "english": "Thai",
+          "domain": "th.wikisource.org"
+        },
+        {
+          "lang": "tl",
+          "name": "Tagalog",
+          "english": "Tagalog",
+          "domain": "tl.wikisource.org"
+        },
+        {
+          "lang": "tr",
+          "name": "Türkçe",
+          "english": "Turkish",
+          "domain": "tr.wikisource.org"
+        },
+        {
+          "lang": "uk",
+          "name": "українська",
+          "english": "Ukrainian",
+          "domain": "uk.wikisource.org"
+        },
+        {
+          "lang": "ur",
+          "name": "اردو",
+          "english": "Urdu",
+          "domain": "ur.wikisource.org"
+        },
+        {
+          "lang": "vec",
+          "name": "vèneto",
+          "english": "Venetian",
+          "domain": "vec.wikisource.org"
+        },
+        {
+          "lang": "vi",
+          "name": "Tiếng Việt",
+          "english": "Vietnamese",
+          "domain": "vi.wikisource.org"
+        },
+        {
+          "lang": "wa",
+          "name": "walon",
+          "english": "Walloon",
+          "domain": "wa.wikisource.org"
+        },
+        {
+          "lang": "yi",
+          "name": "ייִדיש",
+          "english": "Yiddish",
+          "domain": "yi.wikisource.org"
+        },
+        {
+          "lang": "zh",
+          "name": "中文",
+          "english": "Chinese",
+          "domain": "zh.wikisource.org"
+        }
+      ]
+    },
+    {
+      "id": "wikibooks",
+      "name": "Wikibooks",
+      "type": "mediawiki",
+      "capabilities": {
+        "extracts": true,
+        "pageImages": true
+      },
+      "generatedFrom": {
+        "sitematrix": "wikibooks"
+      },
+      "sites": [
+        {
+          "lang": "af",
+          "name": "Afrikaans",
+          "english": "Afrikaans",
+          "domain": "af.wikibooks.org"
+        },
+        {
+          "lang": "ar",
+          "name": "العربية",
+          "english": "Arabic",
+          "domain": "ar.wikibooks.org"
+        },
+        {
+          "lang": "az",
+          "name": "azərbaycanca",
+          "english": "Azerbaijani",
+          "domain": "az.wikibooks.org"
+        },
+        {
+          "lang": "ba",
+          "name": "башҡортса",
+          "english": "Bashkir",
+          "domain": "ba.wikibooks.org"
+        },
+        {
+          "lang": "be",
+          "name": "беларуская",
+          "english": "Belarusian",
+          "domain": "be.wikibooks.org"
+        },
+        {
+          "lang": "bg",
+          "name": "български",
+          "english": "Bulgarian",
+          "domain": "bg.wikibooks.org"
+        },
+        {
+          "lang": "bn",
+          "name": "বাংলা",
+          "english": "Bangla",
+          "domain": "bn.wikibooks.org"
+        },
+        {
+          "lang": "bs",
+          "name": "bosanski",
+          "english": "Bosnian",
+          "domain": "bs.wikibooks.org"
+        },
+        {
+          "lang": "ca",
+          "name": "català",
+          "english": "Catalan",
+          "domain": "ca.wikibooks.org"
+        },
+        {
+          "lang": "cs",
+          "name": "čeština",
+          "english": "Czech",
+          "domain": "cs.wikibooks.org"
+        },
+        {
+          "lang": "cv",
+          "name": "чӑвашла",
+          "english": "Chuvash",
+          "domain": "cv.wikibooks.org"
+        },
+        {
+          "lang": "cy",
+          "name": "Cymraeg",
+          "english": "Welsh",
+          "domain": "cy.wikibooks.org"
+        },
+        {
+          "lang": "da",
+          "name": "dansk",
+          "english": "Danish",
+          "domain": "da.wikibooks.org"
+        },
+        {
+          "lang": "de",
+          "name": "Deutsch",
+          "english": "German",
+          "domain": "de.wikibooks.org"
+        },
+        {
+          "lang": "el",
+          "name": "Ελληνικά",
+          "english": "Greek",
+          "domain": "el.wikibooks.org"
+        },
+        {
+          "lang": "en",
+          "name": "English",
+          "english": "English",
+          "domain": "en.wikibooks.org"
+        },
+        {
+          "lang": "eo",
+          "name": "Esperanto",
+          "english": "Esperanto",
+          "domain": "eo.wikibooks.org"
+        },
+        {
+          "lang": "es",
+          "name": "español",
+          "english": "Spanish",
+          "domain": "es.wikibooks.org"
+        },
+        {
+          "lang": "et",
+          "name": "eesti",
+          "english": "Estonian",
+          "domain": "et.wikibooks.org"
+        },
+        {
+          "lang": "eu",
+          "name": "euskara",
+          "english": "Basque",
+          "domain": "eu.wikibooks.org"
+        },
+        {
+          "lang": "fa",
+          "name": "فارسی",
+          "english": "Persian",
+          "domain": "fa.wikibooks.org"
+        },
+        {
+          "lang": "fi",
+          "name": "suomi",
+          "english": "Finnish",
+          "domain": "fi.wikibooks.org"
+        },
+        {
+          "lang": "fr",
+          "name": "français",
+          "english": "French",
+          "domain": "fr.wikibooks.org"
+        },
+        {
+          "lang": "fy",
+          "name": "Frysk",
+          "english": "Western Frisian",
+          "domain": "fy.wikibooks.org"
+        },
+        {
+          "lang": "gl",
+          "name": "galego",
+          "english": "Galician",
+          "domain": "gl.wikibooks.org"
+        },
+        {
+          "lang": "he",
+          "name": "עברית",
+          "english": "Hebrew",
+          "domain": "he.wikibooks.org"
+        },
+        {
+          "lang": "hi",
+          "name": "हिन्दी",
+          "english": "Hindi",
+          "domain": "hi.wikibooks.org"
+        },
+        {
+          "lang": "hr",
+          "name": "hrvatski",
+          "english": "Croatian",
+          "domain": "hr.wikibooks.org"
+        },
+        {
+          "lang": "hu",
+          "name": "magyar",
+          "english": "Hungarian",
+          "domain": "hu.wikibooks.org"
+        },
+        {
+          "lang": "hy",
+          "name": "հայերեն",
+          "english": "Armenian",
+          "domain": "hy.wikibooks.org"
+        },
+        {
+          "lang": "ia",
+          "name": "interlingua",
+          "english": "Interlingua",
+          "domain": "ia.wikibooks.org"
+        },
+        {
+          "lang": "id",
+          "name": "Bahasa Indonesia",
+          "english": "Indonesian",
+          "domain": "id.wikibooks.org"
+        },
+        {
+          "lang": "is",
+          "name": "íslenska",
+          "english": "Icelandic",
+          "domain": "is.wikibooks.org"
+        },
+        {
+          "lang": "it",
+          "name": "italiano",
+          "english": "Italian",
+          "domain": "it.wikibooks.org"
+        },
+        {
+          "lang": "ja",
+          "name": "日本語",
+          "english": "Japanese",
+          "domain": "ja.wikibooks.org"
+        },
+        {
+          "lang": "ka",
+          "name": "ქართული",
+          "english": "Georgian",
+          "domain": "ka.wikibooks.org"
+        },
+        {
+          "lang": "kk",
+          "name": "қазақша",
+          "english": "Kazakh",
+          "domain": "kk.wikibooks.org"
+        },
+        {
+          "lang": "km",
+          "name": "ភាសាខ្មែរ",
+          "english": "Khmer",
+          "domain": "km.wikibooks.org"
+        },
+        {
+          "lang": "ko",
+          "name": "한국어",
+          "english": "Korean",
+          "domain": "ko.wikibooks.org"
+        },
+        {
+          "lang": "ku",
+          "name": "kurdî",
+          "english": "Kurdish",
+          "domain": "ku.wikibooks.org"
+        },
+        {
+          "lang": "la",
+          "name": "Latina",
+          "english": "Latin",
+          "domain": "la.wikibooks.org"
+        },
+        {
+          "lang": "li",
+          "name": "Limburgs",
+          "english": "Limburgish",
+          "domain": "li.wikibooks.org"
+        },
+        {
+          "lang": "lt",
+          "name": "lietuvių",
+          "english": "Lithuanian",
+          "domain": "lt.wikibooks.org"
+        },
+        {
+          "lang": "mg",
+          "name": "Malagasy",
+          "english": "Malagasy",
+          "domain": "mg.wikibooks.org"
+        },
+        {
+          "lang": "min",
+          "name": "Minangkabau",
+          "english": "Minangkabau",
+          "domain": "min.wikibooks.org"
+        },
+        {
+          "lang": "mk",
+          "name": "македонски",
+          "english": "Macedonian",
+          "domain": "mk.wikibooks.org"
+        },
+        {
+          "lang": "ml",
+          "name": "മലയാളം",
+          "english": "Malayalam",
+          "domain": "ml.wikibooks.org"
+        },
+        {
+          "lang": "mr",
+          "name": "मराठी",
+          "english": "Marathi",
+          "domain": "mr.wikibooks.org"
+        },
+        {
+          "lang": "ms",
+          "name": "Bahasa Melayu",
+          "english": "Malay",
+          "domain": "ms.wikibooks.org"
+        },
+        {
+          "lang": "ne",
+          "name": "नेपाली",
+          "english": "Nepali",
+          "domain": "ne.wikibooks.org"
+        },
+        {
+          "lang": "nl",
+          "name": "Nederlands",
+          "english": "Dutch",
+          "domain": "nl.wikibooks.org"
+        },
+        {
+          "lang": "no",
+          "name": "norsk",
+          "english": "Norwegian",
+          "domain": "no.wikibooks.org"
+        },
+        {
+          "lang": "oc",
+          "name": "occitan",
+          "english": "Occitan",
+          "domain": "oc.wikibooks.org"
+        },
+        {
+          "lang": "pa",
+          "name": "ਪੰਜਾਬੀ",
+          "english": "Punjabi",
+          "domain": "pa.wikibooks.org"
+        },
+        {
+          "lang": "pl",
+          "name": "polski",
+          "english": "Polish",
+          "domain": "pl.wikibooks.org"
+        },
+        {
+          "lang": "pt",
+          "name": "português",
+          "english": "Portuguese",
+          "domain": "pt.wikibooks.org"
+        },
+        {
+          "lang": "ro",
+          "name": "română",
+          "english": "Romanian",
+          "domain": "ro.wikibooks.org"
+        },
+        {
+          "lang": "ru",
+          "name": "русский",
+          "english": "Russian",
+          "domain": "ru.wikibooks.org"
+        },
+        {
+          "lang": "sa",
+          "name": "संस्कृतम्",
+          "english": "Sanskrit",
+          "domain": "sa.wikibooks.org"
+        },
+        {
+          "lang": "shn",
+          "name": "တႆး",
+          "english": "Shan",
+          "domain": "shn.wikibooks.org"
+        },
+        {
+          "lang": "si",
+          "name": "සිංහල",
+          "english": "Sinhala",
+          "domain": "si.wikibooks.org"
+        },
+        {
+          "lang": "sk",
+          "name": "slovenčina",
+          "english": "Slovak",
+          "domain": "sk.wikibooks.org"
+        },
+        {
+          "lang": "sl",
+          "name": "slovenščina",
+          "english": "Slovenian",
+          "domain": "sl.wikibooks.org"
+        },
+        {
+          "lang": "sq",
+          "name": "shqip",
+          "english": "Albanian",
+          "domain": "sq.wikibooks.org"
+        },
+        {
+          "lang": "sr",
+          "name": "српски / srpski",
+          "english": "Serbian",
+          "domain": "sr.wikibooks.org"
+        },
+        {
+          "lang": "sv",
+          "name": "svenska",
+          "english": "Swedish",
+          "domain": "sv.wikibooks.org"
+        },
+        {
+          "lang": "ta",
+          "name": "தமிழ்",
+          "english": "Tamil",
+          "domain": "ta.wikibooks.org"
+        },
+        {
+          "lang": "te",
+          "name": "తెలుగు",
+          "english": "Telugu",
+          "domain": "te.wikibooks.org"
+        },
+        {
+          "lang": "tg",
+          "name": "тоҷикӣ",
+          "english": "Tajik",
+          "domain": "tg.wikibooks.org"
+        },
+        {
+          "lang": "th",
+          "name": "ไทย",
+          "english": "Thai",
+          "domain": "th.wikibooks.org"
+        },
+        {
+          "lang": "tl",
+          "name": "Tagalog",
+          "english": "Tagalog",
+          "domain": "tl.wikibooks.org"
+        },
+        {
+          "lang": "tr",
+          "name": "Türkçe",
+          "english": "Turkish",
+          "domain": "tr.wikibooks.org"
+        },
+        {
+          "lang": "tt",
+          "name": "татарча / tatarça",
+          "english": "Tatar",
+          "domain": "tt.wikibooks.org"
+        },
+        {
+          "lang": "uk",
+          "name": "українська",
+          "english": "Ukrainian",
+          "domain": "uk.wikibooks.org"
+        },
+        {
+          "lang": "ur",
+          "name": "اردو",
+          "english": "Urdu",
+          "domain": "ur.wikibooks.org"
+        },
+        {
+          "lang": "vi",
+          "name": "Tiếng Việt",
+          "english": "Vietnamese",
+          "domain": "vi.wikibooks.org"
+        },
+        {
+          "lang": "zh",
+          "name": "中文",
+          "english": "Chinese",
+          "domain": "zh.wikibooks.org"
+        }
+      ]
+    },
+    {
+      "id": "wikiquote",
+      "name": "Wikiquote",
+      "type": "mediawiki",
+      "capabilities": {
+        "extracts": true,
+        "pageImages": true
+      },
+      "generatedFrom": {
+        "sitematrix": "wikiquote"
+      },
+      "sites": [
+        {
+          "lang": "af",
+          "name": "Afrikaans",
+          "english": "Afrikaans",
+          "domain": "af.wikiquote.org"
+        },
+        {
+          "lang": "ar",
+          "name": "العربية",
+          "english": "Arabic",
+          "domain": "ar.wikiquote.org"
+        },
+        {
+          "lang": "as",
+          "name": "অসমীয়া",
+          "english": "Assamese",
+          "domain": "as.wikiquote.org"
+        },
+        {
+          "lang": "az",
+          "name": "azərbaycanca",
+          "english": "Azerbaijani",
+          "domain": "az.wikiquote.org"
+        },
+        {
+          "lang": "bcl",
+          "name": "Bikol Central",
+          "english": "Central Bikol",
+          "domain": "bcl.wikiquote.org"
+        },
+        {
+          "lang": "be",
+          "name": "беларуская",
+          "english": "Belarusian",
+          "domain": "be.wikiquote.org"
+        },
+        {
+          "lang": "bg",
+          "name": "български",
+          "english": "Bulgarian",
+          "domain": "bg.wikiquote.org"
+        },
+        {
+          "lang": "bjn",
+          "name": "Banjar",
+          "english": "Banjar",
+          "domain": "bjn.wikiquote.org"
+        },
+        {
+          "lang": "bn",
+          "name": "বাংলা",
+          "english": "Bangla",
+          "domain": "bn.wikiquote.org"
+        },
+        {
+          "lang": "br",
+          "name": "brezhoneg",
+          "english": "Breton",
+          "domain": "br.wikiquote.org"
+        },
+        {
+          "lang": "bs",
+          "name": "bosanski",
+          "english": "Bosnian",
+          "domain": "bs.wikiquote.org"
+        },
+        {
+          "lang": "ca",
+          "name": "català",
+          "english": "Catalan",
+          "domain": "ca.wikiquote.org"
+        },
+        {
+          "lang": "cs",
+          "name": "čeština",
+          "english": "Czech",
+          "domain": "cs.wikiquote.org"
+        },
+        {
+          "lang": "cy",
+          "name": "Cymraeg",
+          "english": "Welsh",
+          "domain": "cy.wikiquote.org"
+        },
+        {
+          "lang": "da",
+          "name": "dansk",
+          "english": "Danish",
+          "domain": "da.wikiquote.org"
+        },
+        {
+          "lang": "de",
+          "name": "Deutsch",
+          "english": "German",
+          "domain": "de.wikiquote.org"
+        },
+        {
+          "lang": "el",
+          "name": "Ελληνικά",
+          "english": "Greek",
+          "domain": "el.wikiquote.org"
+        },
+        {
+          "lang": "en",
+          "name": "English",
+          "english": "English",
+          "domain": "en.wikiquote.org"
+        },
+        {
+          "lang": "eo",
+          "name": "Esperanto",
+          "english": "Esperanto",
+          "domain": "eo.wikiquote.org"
+        },
+        {
+          "lang": "es",
+          "name": "español",
+          "english": "Spanish",
+          "domain": "es.wikiquote.org"
+        },
+        {
+          "lang": "et",
+          "name": "eesti",
+          "english": "Estonian",
+          "domain": "et.wikiquote.org"
+        },
+        {
+          "lang": "eu",
+          "name": "euskara",
+          "english": "Basque",
+          "domain": "eu.wikiquote.org"
+        },
+        {
+          "lang": "fa",
+          "name": "فارسی",
+          "english": "Persian",
+          "domain": "fa.wikiquote.org"
+        },
+        {
+          "lang": "fi",
+          "name": "suomi",
+          "english": "Finnish",
+          "domain": "fi.wikiquote.org"
+        },
+        {
+          "lang": "fr",
+          "name": "français",
+          "english": "French",
+          "domain": "fr.wikiquote.org"
+        },
+        {
+          "lang": "gl",
+          "name": "galego",
+          "english": "Galician",
+          "domain": "gl.wikiquote.org"
+        },
+        {
+          "lang": "gor",
+          "name": "Bahasa Hulontalo",
+          "english": "Gorontalo",
+          "domain": "gor.wikiquote.org"
+        },
+        {
+          "lang": "gu",
+          "name": "ગુજરાતી",
+          "english": "Gujarati",
+          "domain": "gu.wikiquote.org"
+        },
+        {
+          "lang": "guw",
+          "name": "gungbe",
+          "english": "Gun",
+          "domain": "guw.wikiquote.org"
+        },
+        {
+          "lang": "he",
+          "name": "עברית",
+          "english": "Hebrew",
+          "domain": "he.wikiquote.org"
+        },
+        {
+          "lang": "hi",
+          "name": "हिन्दी",
+          "english": "Hindi",
+          "domain": "hi.wikiquote.org"
+        },
+        {
+          "lang": "hr",
+          "name": "hrvatski",
+          "english": "Croatian",
+          "domain": "hr.wikiquote.org"
+        },
+        {
+          "lang": "hu",
+          "name": "magyar",
+          "english": "Hungarian",
+          "domain": "hu.wikiquote.org"
+        },
+        {
+          "lang": "hy",
+          "name": "հայերեն",
+          "english": "Armenian",
+          "domain": "hy.wikiquote.org"
+        },
+        {
+          "lang": "id",
+          "name": "Bahasa Indonesia",
+          "english": "Indonesian",
+          "domain": "id.wikiquote.org"
+        },
+        {
+          "lang": "ig",
+          "name": "Igbo",
+          "english": "Igbo",
+          "domain": "ig.wikiquote.org"
+        },
+        {
+          "lang": "is",
+          "name": "íslenska",
+          "english": "Icelandic",
+          "domain": "is.wikiquote.org"
+        },
+        {
+          "lang": "it",
+          "name": "italiano",
+          "english": "Italian",
+          "domain": "it.wikiquote.org"
+        },
+        {
+          "lang": "ja",
+          "name": "日本語",
+          "english": "Japanese",
+          "domain": "ja.wikiquote.org"
+        },
+        {
+          "lang": "ka",
+          "name": "ქართული",
+          "english": "Georgian",
+          "domain": "ka.wikiquote.org"
+        },
+        {
+          "lang": "kn",
+          "name": "ಕನ್ನಡ",
+          "english": "Kannada",
+          "domain": "kn.wikiquote.org"
+        },
+        {
+          "lang": "ko",
+          "name": "한국어",
+          "english": "Korean",
+          "domain": "ko.wikiquote.org"
+        },
+        {
+          "lang": "ku",
+          "name": "kurdî",
+          "english": "Kurdish",
+          "domain": "ku.wikiquote.org"
+        },
+        {
+          "lang": "ky",
+          "name": "кыргызча",
+          "english": "Kyrgyz",
+          "domain": "ky.wikiquote.org"
+        },
+        {
+          "lang": "la",
+          "name": "Latina",
+          "english": "Latin",
+          "domain": "la.wikiquote.org"
+        },
+        {
+          "lang": "li",
+          "name": "Limburgs",
+          "english": "Limburgish",
+          "domain": "li.wikiquote.org"
+        },
+        {
+          "lang": "lt",
+          "name": "lietuvių",
+          "english": "Lithuanian",
+          "domain": "lt.wikiquote.org"
+        },
+        {
+          "lang": "min",
+          "name": "Minangkabau",
+          "english": "Minangkabau",
+          "domain": "min.wikiquote.org"
+        },
+        {
+          "lang": "ml",
+          "name": "മലയാളം",
+          "english": "Malayalam",
+          "domain": "ml.wikiquote.org"
+        },
+        {
+          "lang": "mr",
+          "name": "मराठी",
+          "english": "Marathi",
+          "domain": "mr.wikiquote.org"
+        },
+        {
+          "lang": "ms",
+          "name": "Bahasa Melayu",
+          "english": "Malay",
+          "domain": "ms.wikiquote.org"
+        },
+        {
+          "lang": "nl",
+          "name": "Nederlands",
+          "english": "Dutch",
+          "domain": "nl.wikiquote.org"
+        },
+        {
+          "lang": "nn",
+          "name": "norsk nynorsk",
+          "english": "Norwegian Nynorsk",
+          "domain": "nn.wikiquote.org"
+        },
+        {
+          "lang": "no",
+          "name": "norsk",
+          "english": "Norwegian",
+          "domain": "no.wikiquote.org"
+        },
+        {
+          "lang": "pcm",
+          "name": "Naijá",
+          "english": "Nigerian Pidgin",
+          "domain": "pcm.wikiquote.org"
+        },
+        {
+          "lang": "pl",
+          "name": "polski",
+          "english": "Polish",
+          "domain": "pl.wikiquote.org"
+        },
+        {
+          "lang": "pt",
+          "name": "português",
+          "english": "Portuguese",
+          "domain": "pt.wikiquote.org"
+        },
+        {
+          "lang": "ro",
+          "name": "română",
+          "english": "Romanian",
+          "domain": "ro.wikiquote.org"
+        },
+        {
+          "lang": "ru",
+          "name": "русский",
+          "english": "Russian",
+          "domain": "ru.wikiquote.org"
+        },
+        {
+          "lang": "sa",
+          "name": "संस्कृतम्",
+          "english": "Sanskrit",
+          "domain": "sa.wikiquote.org"
+        },
+        {
+          "lang": "sah",
+          "name": "саха тыла",
+          "english": "Yakut",
+          "domain": "sah.wikiquote.org"
+        },
+        {
+          "lang": "sk",
+          "name": "slovenčina",
+          "english": "Slovak",
+          "domain": "sk.wikiquote.org"
+        },
+        {
+          "lang": "sl",
+          "name": "slovenščina",
+          "english": "Slovenian",
+          "domain": "sl.wikiquote.org"
+        },
+        {
+          "lang": "sq",
+          "name": "shqip",
+          "english": "Albanian",
+          "domain": "sq.wikiquote.org"
+        },
+        {
+          "lang": "sr",
+          "name": "српски / srpski",
+          "english": "Serbian",
+          "domain": "sr.wikiquote.org"
+        },
+        {
+          "lang": "su",
+          "name": "Sunda",
+          "english": "Sundanese",
+          "domain": "su.wikiquote.org"
+        },
+        {
+          "lang": "sv",
+          "name": "svenska",
+          "english": "Swedish",
+          "domain": "sv.wikiquote.org"
+        },
+        {
+          "lang": "ta",
+          "name": "தமிழ்",
+          "english": "Tamil",
+          "domain": "ta.wikiquote.org"
+        },
+        {
+          "lang": "te",
+          "name": "తెలుగు",
+          "english": "Telugu",
+          "domain": "te.wikiquote.org"
+        },
+        {
+          "lang": "th",
+          "name": "ไทย",
+          "english": "Thai",
+          "domain": "th.wikiquote.org"
+        },
+        {
+          "lang": "tl",
+          "name": "Tagalog",
+          "english": "Tagalog",
+          "domain": "tl.wikiquote.org"
+        },
+        {
+          "lang": "tr",
+          "name": "Türkçe",
+          "english": "Turkish",
+          "domain": "tr.wikiquote.org"
+        },
+        {
+          "lang": "uk",
+          "name": "українська",
+          "english": "Ukrainian",
+          "domain": "uk.wikiquote.org"
+        },
+        {
+          "lang": "ur",
+          "name": "اردو",
+          "english": "Urdu",
+          "domain": "ur.wikiquote.org"
+        },
+        {
+          "lang": "uz",
+          "name": "oʻzbekcha / ўзбекча",
+          "english": "Uzbek",
+          "domain": "uz.wikiquote.org"
+        },
+        {
+          "lang": "vi",
+          "name": "Tiếng Việt",
+          "english": "Vietnamese",
+          "domain": "vi.wikiquote.org"
+        },
+        {
+          "lang": "zh",
+          "name": "中文",
+          "english": "Chinese",
+          "domain": "zh.wikiquote.org"
+        }
+      ]
+    },
+    {
+      "id": "wikivoyage",
+      "name": "Wikivoyage",
+      "type": "mediawiki",
+      "capabilities": {
+        "extracts": true,
+        "pageImages": true
+      },
+      "generatedFrom": {
+        "sitematrix": "wikivoyage"
+      },
+      "sites": [
+        {
+          "lang": "bn",
+          "name": "বাংলা",
+          "english": "Bangla",
+          "domain": "bn.wikivoyage.org"
+        },
+        {
+          "lang": "cs",
+          "name": "čeština",
+          "english": "Czech",
+          "domain": "cs.wikivoyage.org"
+        },
+        {
+          "lang": "de",
+          "name": "Deutsch",
+          "english": "German",
+          "domain": "de.wikivoyage.org"
+        },
+        {
+          "lang": "el",
+          "name": "Ελληνικά",
+          "english": "Greek",
+          "domain": "el.wikivoyage.org"
+        },
+        {
+          "lang": "en",
+          "name": "English",
+          "english": "English",
+          "domain": "en.wikivoyage.org"
+        },
+        {
+          "lang": "eo",
+          "name": "Esperanto",
+          "english": "Esperanto",
+          "domain": "eo.wikivoyage.org"
+        },
+        {
+          "lang": "es",
+          "name": "español",
+          "english": "Spanish",
+          "domain": "es.wikivoyage.org"
+        },
+        {
+          "lang": "fa",
+          "name": "فارسی",
+          "english": "Persian",
+          "domain": "fa.wikivoyage.org"
+        },
+        {
+          "lang": "fi",
+          "name": "suomi",
+          "english": "Finnish",
+          "domain": "fi.wikivoyage.org"
+        },
+        {
+          "lang": "fr",
+          "name": "français",
+          "english": "French",
+          "domain": "fr.wikivoyage.org"
+        },
+        {
+          "lang": "he",
+          "name": "עברית",
+          "english": "Hebrew",
+          "domain": "he.wikivoyage.org"
+        },
+        {
+          "lang": "hi",
+          "name": "हिन्दी",
+          "english": "Hindi",
+          "domain": "hi.wikivoyage.org"
+        },
+        {
+          "lang": "id",
+          "name": "Bahasa Indonesia",
+          "english": "Indonesian",
+          "domain": "id.wikivoyage.org"
+        },
+        {
+          "lang": "it",
+          "name": "italiano",
+          "english": "Italian",
+          "domain": "it.wikivoyage.org"
+        },
+        {
+          "lang": "ja",
+          "name": "日本語",
+          "english": "Japanese",
+          "domain": "ja.wikivoyage.org"
+        },
+        {
+          "lang": "nl",
+          "name": "Nederlands",
+          "english": "Dutch",
+          "domain": "nl.wikivoyage.org"
+        },
+        {
+          "lang": "pl",
+          "name": "polski",
+          "english": "Polish",
+          "domain": "pl.wikivoyage.org"
+        },
+        {
+          "lang": "ps",
+          "name": "پښتو",
+          "english": "Pashto",
+          "domain": "ps.wikivoyage.org"
+        },
+        {
+          "lang": "pt",
+          "name": "português",
+          "english": "Portuguese",
+          "domain": "pt.wikivoyage.org"
+        },
+        {
+          "lang": "ro",
+          "name": "română",
+          "english": "Romanian",
+          "domain": "ro.wikivoyage.org"
+        },
+        {
+          "lang": "ru",
+          "name": "русский",
+          "english": "Russian",
+          "domain": "ru.wikivoyage.org"
+        },
+        {
+          "lang": "shn",
+          "name": "တႆး",
+          "english": "Shan",
+          "domain": "shn.wikivoyage.org"
+        },
+        {
+          "lang": "sv",
+          "name": "svenska",
+          "english": "Swedish",
+          "domain": "sv.wikivoyage.org"
+        },
+        {
+          "lang": "tr",
+          "name": "Türkçe",
+          "english": "Turkish",
+          "domain": "tr.wikivoyage.org"
+        },
+        {
+          "lang": "uk",
+          "name": "українська",
+          "english": "Ukrainian",
+          "domain": "uk.wikivoyage.org"
+        },
+        {
+          "lang": "vi",
+          "name": "Tiếng Việt",
+          "english": "Vietnamese",
+          "domain": "vi.wikivoyage.org"
+        },
+        {
+          "lang": "zh",
+          "name": "中文",
+          "english": "Chinese",
+          "domain": "zh.wikivoyage.org"
+        }
+      ]
+    },
+    {
+      "id": "wikiversity",
+      "name": "Wikiversity",
+      "type": "mediawiki",
+      "capabilities": {
+        "extracts": true,
+        "pageImages": true
+      },
+      "generatedFrom": {
+        "sitematrix": "wikiversity"
+      },
+      "sites": [
+        {
+          "lang": "ar",
+          "name": "العربية",
+          "english": "Arabic",
+          "domain": "ar.wikiversity.org"
+        },
+        {
+          "lang": "cs",
+          "name": "čeština",
+          "english": "Czech",
+          "domain": "cs.wikiversity.org"
+        },
+        {
+          "lang": "de",
+          "name": "Deutsch",
+          "english": "German",
+          "domain": "de.wikiversity.org"
+        },
+        {
+          "lang": "el",
+          "name": "Ελληνικά",
+          "english": "Greek",
+          "domain": "el.wikiversity.org"
+        },
+        {
+          "lang": "en",
+          "name": "English",
+          "english": "English",
+          "domain": "en.wikiversity.org"
+        },
+        {
+          "lang": "es",
+          "name": "español",
+          "english": "Spanish",
+          "domain": "es.wikiversity.org"
+        },
+        {
+          "lang": "fi",
+          "name": "suomi",
+          "english": "Finnish",
+          "domain": "fi.wikiversity.org"
+        },
+        {
+          "lang": "fr",
+          "name": "français",
+          "english": "French",
+          "domain": "fr.wikiversity.org"
+        },
+        {
+          "lang": "hi",
+          "name": "हिन्दी",
+          "english": "Hindi",
+          "domain": "hi.wikiversity.org"
+        },
+        {
+          "lang": "it",
+          "name": "italiano",
+          "english": "Italian",
+          "domain": "it.wikiversity.org"
+        },
+        {
+          "lang": "ja",
+          "name": "日本語",
+          "english": "Japanese",
+          "domain": "ja.wikiversity.org"
+        },
+        {
+          "lang": "ko",
+          "name": "한국어",
+          "english": "Korean",
+          "domain": "ko.wikiversity.org"
+        },
+        {
+          "lang": "pt",
+          "name": "português",
+          "english": "Portuguese",
+          "domain": "pt.wikiversity.org"
+        },
+        {
+          "lang": "ru",
+          "name": "русский",
+          "english": "Russian",
+          "domain": "ru.wikiversity.org"
+        },
+        {
+          "lang": "sl",
+          "name": "slovenščina",
+          "english": "Slovenian",
+          "domain": "sl.wikiversity.org"
+        },
+        {
+          "lang": "sv",
+          "name": "svenska",
+          "english": "Swedish",
+          "domain": "sv.wikiversity.org"
+        },
+        {
+          "lang": "zh",
+          "name": "中文",
+          "english": "Chinese",
+          "domain": "zh.wikiversity.org"
+        }
+      ]
+    }
+  ]
+}

@@ -74,13 +74,18 @@ export class MediaWikiFeedCursor implements FeedCursor {
 }
 
 export interface MediaWikiSourceConfig {
+  /** Site id, e.g. 'wikipedia:en'. */
   id: string
+  /** e.g. 'Wikipedia (Japanese)'. */
   displayName: string
-  /**
-   * Bare wiki domain, e.g. 'en.wikipedia.org'. Retargeting a different
-   * MediaWiki wiki is a change to this value and nothing else.
-   */
+  /** Bare wiki domain, e.g. 'ja.wikipedia.org'. */
   domain: string
+  /**
+   * e.g. '/w/api.php'. Kept separate from `domain` because both are needed and
+   * neither derives from the other: the session is built from domain+apiPath,
+   * while canonicalUrl is built from domain+'/wiki/'.
+   */
+  apiPath: string
   /** Sent as `api-user-agent`; Wikimedia's etiquette policy asks for one. */
   userAgent: string
 }
@@ -137,9 +142,13 @@ export class MediaWikiSource implements WikiSource {
     this.id = config.id
     this.displayName = config.displayName
     this.#config = config
-    this.#session = new Session(config.domain, { ...SESSION_DEFAULT_PARAMS }, {
-      userAgent: config.userAgent,
-    })
+    // m3api accepts a bare domain or a full api.php URL; passing the full URL
+    // is what makes apiPath effective for wikis that do not use /w/api.php.
+    this.#session = new Session(
+      `https://${config.domain}${config.apiPath}`,
+      { ...SESSION_DEFAULT_PARAMS },
+      { userAgent: config.userAgent },
+    )
   }
 
   openFeed(opts: { sort: SortOrder; pageSize: number }): FeedCursor {

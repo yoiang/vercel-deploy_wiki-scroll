@@ -17,19 +17,28 @@ All wiki-specific knowledge lives behind the `WikiSource` interface in
 `src/wiki/types.ts`. `src/wiki/mediawiki.ts` is the only file that imports
 `m3api`; everything above it speaks in `FeedItem` and `ArticleContent`.
 
-- **Point at a different MediaWiki wiki** — add an entry to
-  `src/wiki/registry.ts`.
-- **Support a non-MediaWiki wiki** — write a class implementing `WikiSource`.
+- **The wiki catalogue** is `src/wiki/catalogue.json` — *families* (Wikipedia,
+  Wiktionary, …) each holding their language *sites*. Run
+  `npm run update-catalogue` to refresh the Wikimedia families from the
+  `sitematrix` API; families you add by hand are left untouched, and sites
+  flagged `closed` are skipped.
+- **Following** is `src/feed/followStore.ts`, persisted to localStorage under
+  `wiki-scroll.following.v1`.
+- **Merging** is `src/wiki/mergedCursor.ts`, which combines one `FeedCursor`
+  per followed site into a single cursor emitting the globally newest article.
+  A site that fails is isolated and retried rather than breaking the feed.
 - **Change which articles appear** — implement a `FeedPolicy` in
-  `src/feed/policy.ts`. The V1 default, `requireImage`, hides the roughly half
-  of recently-edited articles that have no thumbnail.
+  `src/feed/policy.ts`. The default, `requireImage`, hides the roughly half of
+  recently-edited articles that have no thumbnail.
+- **Support a non-MediaWiki wiki** — add a `type` to the catalogue and a branch
+  in `src/wiki/sources.ts` returning a different `WikiSource`.
 
-The design document is at
-`docs/superpowers/specs/2026-09-17-wiki-scroll-design.md`, and the
-implementation plan at `docs/superpowers/plans/2026-09-17-wiki-scroll.md`.
+Design documents are in `docs/superpowers/specs/`; deferred work, including the
+third-party wiki catalogue, is in `docs/BACKLOG.md`.
 
 `src/wiki/live-check.test.ts` is a skipped integration test that hits the real
-Wikipedia API. Un-skip it to verify the network path after changing sources.
+Wikipedia API. Un-skip it to verify the network path after changing sources —
+but note it cannot catch CORS problems, because Node does not enforce CORS.
 
 ## Before distributing this app
 

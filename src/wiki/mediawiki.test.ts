@@ -89,9 +89,10 @@ describe('MediaWikiFeedCursor', () => {
 })
 
 const testConfig: MediaWikiSourceConfig = {
-  id: 'wikipedia-en',
+  id: 'wikipedia:en',
   displayName: 'Wikipedia (English)',
   domain: 'en.wikipedia.org',
+  apiPath: '/w/api.php',
   userAgent: 'wiki-scroll/0.1',
 }
 

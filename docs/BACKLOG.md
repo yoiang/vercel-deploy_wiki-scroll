@@ -3,33 +3,59 @@
 Deferred work, with the place in the current architecture where each one
 slots in. Nothing here is started.
 
-## Multi-source feed (includes language selection)
+## Phase 2: third-party wiki catalogue
 
-Merge articles from more than one wiki at once. Selecting several *language*
-editions of Wikipedia is a special case of this, not a separate feature.
+Add non-Wikimedia MediaWiki sites, from the `Sites using MediaWiki` lists on
+mediawiki.org. Phase 1 (Wikimedia, 801 sites) is specified in
+`docs/superpowers/specs/2026-09-17-multi-wiki-design.md`.
 
-**Why it is one feature, not two:** on Wikipedia, language is not a property
-you can filter on — it *is* the wiki. Every mainspace article on
-`en.wikipedia.org` is English; German articles live on `de.wikipedia.org`. The
-`sitematrix` API lists **348 open Wikipedia language editions**, each a
-separate domain with its own `recentchanges` feed. So "show me German and
-Japanese articles" and "show me Wikipedia and Wiktionary" are the same
-mechanism.
+**Scale, measured 2026-09-17:** 62 subpages exist but most are translations.
+The real content pages are ~28. `/en` has 369 distinct hosts, `/multilingual`
+152, `/de` 142, `/es` 24 — extrapolating, **1,000–1,200 distinct sites**. Page
+content is retrievable programmatically via
+`action=parse&prop=externallinks` against mediawiki.org.
 
-**Where it slots in:** `getActiveSource()` in `src/wiki/registry.ts` returns a
-single `WikiSource`. This becomes a set of sources, and `feedStore` holds one
-`FeedCursor` per source rather than one overall.
+**Why it needs a crawler:** the lists publish **homepage URLs only**. Each host
+must be probed to find its `api.php` (the path varies — `/api.php`,
+`/w/api.php`, …), then checked for anonymous CORS and for the `TextExtracts`
+and `PageImages` extensions.
 
-**The constraint to design around:** fetching all 348 editions per scroll would
-mean hundreds of HTTP requests to fill ten cards, with almost all results
-discarded. A round-robin that rotates through selected wikis a few at a time,
-ordered by edit activity, merge-sorting batches by timestamp, keeps this
-practical. Note also that small-language wikis rarely have thumbnails, so they
-interact badly with the `requireImage` policy.
+**What a sample of five actually showed:**
 
-**UI:** deliberately undesigned. Three layouts were sketched (dedicated picker
-screen, inline chips + search, inline grouped list) and shelved until the
-underlying merge exists.
+| Site | CORS | `extracts` | `pageImages` |
+| --- | --- | --- | --- |
+| Minecraft Wiki | yes | yes | yes |
+| OpenStreetMap Wiki | yes | **no** | **no** |
+| Team Fortress Wiki | yes | **no** | **no** |
+| wikiHow | yes | unparseable response | — |
+| CreationWiki | unreachable | — | — |
+
+Only one of five worked fully. CORS is less of a problem than expected; missing
+extensions are the real obstacle. A site without `PageImages` produces no
+thumbnails, so the `requireImage` policy rejects everything it returns.
+
+**Depends on:** the *show imageless articles* toggle below. Without it,
+text-only wikis are invisible and phase 2 delivers little.
+
+**Pairs with:** the core-API fallback (see below), which would convert most of
+these from text-only to fully usable.
+
+## Core-API fallback for wikis without TextExtracts/PageImages
+
+Synthesise the two missing pieces using core MediaWiki APIs: the intro via
+`action=parse` on the lead section, and a thumbnail via `prop=images` +
+`prop=imageinfo`. Both are core, so any MediaWiki would work.
+
+**Where it slots in:** `MediaWikiSource`, selected by the family's
+`capabilities` flags. The `WikiSource` interface and everything above it are
+unaffected.
+
+## Multi-source feed — DONE
+
+Built to `docs/superpowers/specs/2026-09-17-multi-wiki-design.md`, with layout B
+for the browse/follow screens. Ships the seven Wikimedia content families
+(801 sites). Phase 2 (third-party wikis) is still open — see the top of this
+file.
 
 ## Pull to refresh
 

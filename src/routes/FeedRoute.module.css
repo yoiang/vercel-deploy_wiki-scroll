@@ -25,3 +25,29 @@
   border-radius: 999px;
   color: var(--accent);
 }
+
+.notice {
+  margin: 0.75rem 1rem 0;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+}
+
+.emptyState {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.emptyAction {
+  display: inline-block;
+  margin-top: 0.9rem;
+  padding: 0.55rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--accent);
+  text-decoration: none;
+}

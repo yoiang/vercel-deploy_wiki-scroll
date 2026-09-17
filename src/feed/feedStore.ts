@@ -1,5 +1,5 @@
 import { createSignal } from 'solid-js'
-import type { FeedCursor, FeedItem, WikiSource } from '../wiki/types.ts'
+import type { FeedCursor, FeedItem } from '../wiki/types.ts'
 import type { FeedPolicy } from './policy.ts'
 
 export type FeedStatus = 'idle' | 'loading' | 'exhausted' | 'error'
@@ -8,8 +8,8 @@ export type FeedStatus = 'idle' | 'loading' | 'exhausted' | 'error'
 export const TARGET_ITEMS_PER_LOAD = 10
 
 /**
- * Hard cap on API batches consumed per loadMore(). Without this, a long run of
- * policy-rejected items (e.g. imageless articles) would spin indefinitely.
+ * Hard cap on cursor batches consumed per loadMore(). Without this, a long run
+ * of policy-rejected items (e.g. imageless articles) would spin indefinitely.
  */
 export const MAX_BATCHES_PER_LOAD = 5
 
@@ -17,24 +17,34 @@ export interface FeedStore {
   items: () => FeedItem[]
   status: () => FeedStatus
   error: () => Error | null
+  sourceErrors: () => Array<{ siteId: string; error: Error }>
   scrollOffset: () => number
   setScrollOffset: (offset: number) => void
   loadMore: () => Promise<void>
   retry: () => Promise<void>
+  reset: () => void
+  /** Fed by the cursor factory's onSourceError / onSourceRecovered hooks. */
+  noteSourceError: (siteId: string, sourceError: Error) => void
+  noteSourceRecovered: (siteId: string) => void
 }
 
-export function createFeedStore(source: WikiSource, policy: FeedPolicy): FeedStore {
+/**
+ * The feed's accumulated items and pagination state. Deals only in cursors —
+ * it has no knowledge of wikis, sources, or how many of them there are.
+ */
+export function createFeedStore(openCursor: () => FeedCursor, policy: FeedPolicy): FeedStore {
   const [items, setItems] = createSignal<FeedItem[]>([])
   const [status, setStatus] = createSignal<FeedStatus>('idle')
   const [error, setError] = createSignal<Error | null>(null)
+  const [sourceErrors, setSourceErrors] = createSignal<Array<{ siteId: string; error: Error }>>([])
   const [scrollOffset, setScrollOffset] = createSignal(0)
 
-  const seenIds = new Set<string>()
+  let seenIds = new Set<string>()
   let cursor: FeedCursor | null = null
   let inFlight = false
 
-  function openCursor(): FeedCursor {
-    cursor ??= source.openFeed({ sort: 'recently-updated', pageSize: TARGET_ITEMS_PER_LOAD })
+  function currentCursor(): FeedCursor {
+    cursor ??= openCursor()
     return cursor
   }
 
@@ -55,7 +65,7 @@ export function createFeedStore(source: WikiSource, policy: FeedPolicy): FeedSto
       let exhausted = false
 
       while (accepted.length < TARGET_ITEMS_PER_LOAD && batches < MAX_BATCHES_PER_LOAD) {
-        const batch = await openCursor().next()
+        const batch = await currentCursor().next()
         batches++
 
         if (batch === null) {
@@ -95,5 +105,39 @@ export function createFeedStore(source: WikiSource, policy: FeedPolicy): FeedSto
     await loadMore()
   }
 
-  return { items, status, error, scrollOffset, setScrollOffset, loadMore, retry }
+  /** Everything loaded is invalid — for instance when the followed set changes. */
+  function reset(): void {
+    cursor = null
+    seenIds = new Set<string>()
+    setItems([])
+    setStatus('idle')
+    setError(null)
+    setSourceErrors([])
+    setScrollOffset(0)
+  }
+
+  function noteSourceError(siteId: string, sourceError: Error): void {
+    setSourceErrors((previous) => [
+      ...previous.filter((entry) => entry.siteId !== siteId),
+      { siteId, error: sourceError },
+    ])
+  }
+
+  function noteSourceRecovered(siteId: string): void {
+    setSourceErrors((previous) => previous.filter((entry) => entry.siteId !== siteId))
+  }
+
+  return {
+    items,
+    status,
+    error,
+    sourceErrors,
+    scrollOffset,
+    setScrollOffset,
+    loadMore,
+    retry,
+    reset,
+    noteSourceError,
+    noteSourceRecovered,
+  }
 }

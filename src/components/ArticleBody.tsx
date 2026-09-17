@@ -1,9 +1,12 @@
 import { useNavigate } from '@solidjs/router'
+import { parseSiteId } from '../wiki/catalogue.ts'
 import '../styles/wiki-content.css'
 import styles from './ArticleBody.module.css'
 
 interface ArticleBodyProps {
   html: string
+  /** The wiki this article came from; internal links resolve against it. */
+  siteId: string
 }
 
 const WIKI_LINK_PREFIX = '/wiki/'
@@ -25,8 +28,12 @@ export default function ArticleBody(props: ArticleBodyProps) {
 
     if (href.startsWith(WIKI_LINK_PREFIX)) {
       event.preventDefault()
+      // Resolve against this article's own wiki — otherwise a link inside a
+      // Japanese article would open the English one.
+      const parsed = parseSiteId(props.siteId)
+      if (!parsed) return
       const title = href.slice(WIKI_LINK_PREFIX.length).split('#')[0]!
-      navigate(`/article/${title}`)
+      navigate(`/article/${parsed.familyId}/${parsed.lang}/${title}`)
       return
     }
 

@@ -1,4 +1,20 @@
-.body {
-  padding: 1.5rem 1.25rem;
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  color: var(--text);
+  text-decoration: none;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.row:active {
+  background: var(--border);
+}
+
+.rowValue {
   color: var(--muted);
+  font-size: 0.9rem;
 }
