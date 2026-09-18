@@ -26,9 +26,26 @@
 
 .title {
   margin: 0;
+  /* Takes the slack, pushing any trailing action to the far edge. */
+  flex: 1;
+  min-width: 0;
   font-size: 1.05rem;
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.trailing {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: none;
+  border-radius: 50%;
+  color: var(--text);
+}
+
+.trailing:active {
+  background: var(--border);
 }

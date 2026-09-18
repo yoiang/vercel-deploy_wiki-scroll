@@ -1,7 +1,7 @@
 import { For, Show, createMemo, createSignal } from 'solid-js'
 import { useNavigate, useParams } from '@solidjs/router'
 import AppBar from '../components/AppBar.tsx'
-import { followStore } from '../feed/followStore.ts'
+import { followStore, removeCustomWikiAndUnfollow } from '../feed/followStore.ts'
 import { findFamily, makeSiteId, searchSites } from '../wiki/catalogue.ts'
 import styles from './LanguagePickerRoute.module.css'
 
@@ -77,6 +77,21 @@ export default function LanguagePickerRoute() {
                 )
               }}
             </For>
+
+            <Show when={found().custom}>
+              <div class={styles.removeBar}>
+                <button
+                  type="button"
+                  class={styles.remove}
+                  onClick={() => {
+                    removeCustomWikiAndUnfollow(found().id)
+                    navigate('/settings/wikis')
+                  }}
+                >
+                  Remove this wiki
+                </button>
+              </div>
+            </Show>
           </div>
         )}
       </Show>

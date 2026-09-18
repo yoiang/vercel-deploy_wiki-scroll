@@ -3,10 +3,15 @@
 Deferred work, with the place in the current architecture where each one
 slots in. Nothing here is started.
 
-## BUG: article URLs 404 on Vercel after a page reload
+## BUG: article URLs 404 on Vercel after a page reload — FIXED 2026-09-18
+
+Fixed by `vercel.json` at the repo root. Kept here for the lesson in the
+"why no test caught it" note below.
 
 Opening an article and then reloading — or following a shared article link —
-gives Vercel's "page doesn't exist" rather than the article.
+gave Vercel's "page doesn't exist" rather than the article. It affected *every*
+client-side route, not just articles: `/settings` and `/settings/wikis` 404ed
+identically.
 
 **Cause:** this is a single-page app with client-side routes, but the build
 output is static files only:
@@ -137,6 +142,11 @@ Synthesise the two missing pieces using core MediaWiki APIs: the intro via
 **Where it slots in:** `MediaWikiSource`, selected by the family's
 `capabilities` flags. The `WikiSource` interface and everything above it are
 unaffected.
+
+**Now more valuable:** users can add arbitrary wikis by URL, and three of the
+five real third-party wikis measured have neither extension. Without this
+fallback a good share of what people add will be text-only — and text-only
+wikis stay invisible until the *show imageless articles* toggle exists.
 
 ## Multi-source feed — DONE
 

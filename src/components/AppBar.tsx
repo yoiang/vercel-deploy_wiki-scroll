@@ -1,9 +1,12 @@
+import type { JSX } from 'solid-js'
 import styles from './AppBar.module.css'
 
 interface AppBarProps {
   title: string
   leading: 'menu' | 'back'
   onLeadingClick: () => void
+  /** Optional action rendered at the trailing edge, e.g. "open on the wiki". */
+  trailing?: JSX.Element
 }
 
 export default function AppBar(props: AppBarProps) {
@@ -39,6 +42,7 @@ export default function AppBar(props: AppBarProps) {
         )}
       </button>
       <h1 class={styles.title}>{props.title}</h1>
+      {props.trailing}
     </header>
   )
 }

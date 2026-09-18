@@ -1,5 +1,5 @@
 import { findSite } from './catalogue.ts'
-import { DEFAULT_API_PATH } from './catalogueTypes.ts'
+import { DEFAULT_API_PATH, DEFAULT_ARTICLE_PATH } from './catalogueTypes.ts'
 import { MediaWikiSource } from './mediawiki.ts'
 import type { WikiSource } from './types.ts'
 
@@ -43,6 +43,7 @@ export function getSource(siteId: string): WikiSource {
     displayName: `${family.name} (${site.english})`,
     domain: site.domain,
     apiPath: family.apiPath ?? DEFAULT_API_PATH,
+    articlePath: family.articlePath ?? DEFAULT_ARTICLE_PATH,
     userAgent: USER_AGENT,
   })
 

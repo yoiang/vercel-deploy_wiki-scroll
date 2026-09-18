@@ -194,3 +194,35 @@ describe('MediaWikiSource request construction', () => {
     expect(url).toContain('generator=recentchanges')
   })
 })
+
+describe('canonicalUrl article path', () => {
+  // Wikis differ: Wikipedia serves /wiki/, Minecraft Wiki /w/. Hardcoding
+  // /wiki/ happens to survive on minecraft.wiki because it 301-redirects,
+  // but that is luck rather than correctness.
+  const mcConfig: MediaWikiSourceConfig = {
+    id: 'custom-abcd1234',
+    displayName: 'Minecraft Wiki',
+    domain: 'minecraft.wiki',
+    apiPath: '/api.php',
+    articlePath: '/w/',
+    userAgent: 'wiki-scroll/0.1',
+  }
+
+  it("uses the wiki's own article path", () => {
+    const article = parseResponseToArticle(
+      mcConfig,
+      { parse: { title: 'Anvil', text: '<p>Hi</p>' } },
+      new Date(),
+    )
+    expect(article.canonicalUrl).toBe('https://minecraft.wiki/w/Anvil')
+  })
+
+  it('still uses /wiki/ for Wikipedia', () => {
+    const article = parseResponseToArticle(
+      { ...testConfig, articlePath: '/wiki/' },
+      { parse: { title: 'Apple II', text: '<p>Hi</p>' } },
+      new Date(),
+    )
+    expect(article.canonicalUrl).toBe('https://en.wikipedia.org/wiki/Apple%20II')
+  })
+})

@@ -94,7 +94,14 @@
   font-style: italic;
 }
 
-/* Chrome that makes no sense in a reader. */
+/*
+ * Chrome that makes no sense in a reader.
+ *
+ * The first group is Wikipedia's vocabulary; the second is what other wikis
+ * call the same things. Every wiki names these differently — Minecraft Wiki's
+ * maintenance banner is `.msgbox`, not `.ambox` — and a wiki's own site CSS,
+ * which this app never loads, is what normally hides them.
+ */
 .wiki-content .navbox,
 .wiki-content .vertical-navbox,
 .wiki-content .mw-editsection,
@@ -104,6 +111,13 @@
 .wiki-content .sistersitebox,
 .wiki-content .ambox,
 .wiki-content #toc,
-.wiki-content .toc {
+.wiki-content .toc,
+/* Third-party conventions. */
+.wiki-content .msgbox,
+.wiki-content .notice,
+.wiki-content .messagebox,
+.wiki-content .mbox,
+.wiki-content .stub,
+.wiki-content .navbox-container {
   display: none;
 }

@@ -29,7 +29,13 @@ export interface WikiFamily {
   type: 'mediawiki'
   /** Third-party MediaWikis do not all serve /w/api.php. */
   apiPath?: string
+  /** Where articles live, e.g. '/wiki/' or '/w/'. Defaults to '/wiki/'. */
+  articlePath?: string
   capabilities: WikiCapabilities
+  /** True for user-added wikis; enables the remove action. */
+  custom?: true
+  /** Canonical API URL. Present on custom families; the deduplication key. */
+  apiUrl?: string
   /** Present when `sites` is machine-generated; see scripts/update-catalogue.mjs. */
   generatedFrom?: { sitematrix: string }
   sites: WikiSite[]
@@ -40,3 +46,6 @@ export interface Catalogue {
 }
 
 export const DEFAULT_API_PATH = '/w/api.php'
+
+/** Wikipedia's article path. Minecraft Wiki, for one, uses '/w/' instead. */
+export const DEFAULT_ARTICLE_PATH = '/wiki/'

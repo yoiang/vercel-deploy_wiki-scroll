@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { createMergedCursor } from './mergedCursor.ts'
+import { probeWiki, toFamily } from './probeWiki.ts'
 import { getSource } from './sources.ts'
 
 /**
@@ -54,5 +55,40 @@ describe.skip('live multi-wiki merge', () => {
       }
     },
     60_000,
+  )
+})
+
+describe.skip('live custom wiki probe', () => {
+  it(
+    'discovers a real third-party wiki from a bare host',
+    async () => {
+      const probed = await probeWiki('minecraft.wiki')
+      expect(probed.sitename).toBe('Minecraft Wiki')
+      expect(probed.apiUrl).toBe('https://minecraft.wiki/api.php')
+      expect(probed.capabilities).toEqual({ extracts: true, pageImages: true })
+
+      const built = toFamily(probed, '')
+      expect(built.sites).toHaveLength(1)
+      expect(built.name).toBe('Minecraft Wiki')
+    },
+    30_000,
+  )
+
+  it(
+    'discovers a wiki served at /w/api.php and reports it as text-only',
+    async () => {
+      const probed = await probeWiki('https://wiki.openstreetmap.org/wiki/Main_Page')
+      expect(probed.apiPath).toBe('/w/api.php')
+      expect(probed.capabilities.pageImages).toBe(false)
+    },
+    30_000,
+  )
+
+  it(
+    'rejects a wiki already in the bundled catalogue',
+    async () => {
+      await expect(probeWiki('en.wikipedia.org')).rejects.toMatchObject({ kind: 'duplicate' })
+    },
+    30_000,
   )
 })

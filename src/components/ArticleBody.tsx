@@ -1,5 +1,6 @@
 import { useNavigate } from '@solidjs/router'
-import { parseSiteId } from '../wiki/catalogue.ts'
+import { findFamily, parseSiteId } from '../wiki/catalogue.ts'
+import { DEFAULT_ARTICLE_PATH } from '../wiki/catalogueTypes.ts'
 import '../styles/wiki-content.css'
 import styles from './ArticleBody.module.css'
 
@@ -8,8 +9,6 @@ interface ArticleBodyProps {
   /** The wiki this article came from; internal links resolve against it. */
   siteId: string
 }
-
-const WIKI_LINK_PREFIX = '/wiki/'
 
 export default function ArticleBody(props: ArticleBodyProps) {
   const navigate = useNavigate()
@@ -26,13 +25,17 @@ export default function ArticleBody(props: ArticleBodyProps) {
     const href = anchor.getAttribute('href')
     if (!href) return
 
-    if (href.startsWith(WIKI_LINK_PREFIX)) {
+    // Resolve against this article's own wiki — otherwise a link inside a
+    // Japanese article would open the English one. The prefix is per-wiki:
+    // Wikipedia serves articles at /wiki/, Minecraft Wiki at /w/.
+    const parsed = parseSiteId(props.siteId)
+    const articlePath = parsed
+      ? (findFamily(parsed.familyId)?.articlePath ?? DEFAULT_ARTICLE_PATH)
+      : DEFAULT_ARTICLE_PATH
+
+    if (parsed && href.startsWith(articlePath)) {
       event.preventDefault()
-      // Resolve against this article's own wiki — otherwise a link inside a
-      // Japanese article would open the English one.
-      const parsed = parseSiteId(props.siteId)
-      if (!parsed) return
-      const title = href.slice(WIKI_LINK_PREFIX.length).split('#')[0]!
+      const title = href.slice(articlePath.length).split('#')[0]!
       navigate(`/article/${parsed.familyId}/${parsed.lang}/${title}`)
       return
     }

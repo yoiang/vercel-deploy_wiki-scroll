@@ -1,5 +1,6 @@
 import Session from 'm3api/browser.js'
 import { sanitizeWikiHtml } from '../lib/sanitizeWikiHtml.ts'
+import { DEFAULT_ARTICLE_PATH } from './catalogueTypes.ts'
 import type { ArticleContent, FeedCursor, FeedItem, SortOrder, WikiSource } from './types.ts'
 
 /**
@@ -86,6 +87,11 @@ export interface MediaWikiSourceConfig {
    * while canonicalUrl is built from domain+'/wiki/'.
    */
   apiPath: string
+  /**
+   * Where articles live, e.g. '/wiki/' or '/w/'. Used to build canonicalUrl.
+   * Defaults to '/wiki/' when absent.
+   */
+  articlePath?: string
   /** Sent as `api-user-agent`; Wikimedia's etiquette policy asks for one. */
   userAgent: string
 }
@@ -126,9 +132,13 @@ export function parseResponseToArticle(
 
   return {
     title: parse.title,
-    html: sanitizeWikiHtml(parse.text),
+    // The wiki's own origin, so root-relative image URLs resolve against it
+    // rather than against this app.
+    html: sanitizeWikiHtml(parse.text, `https://${config.domain}`),
     updatedAt,
-    canonicalUrl: `https://${config.domain}/wiki/${encodeURI(parse.title).replace(/'/g, '%27')}`,
+    canonicalUrl: `https://${config.domain}${config.articlePath ?? DEFAULT_ARTICLE_PATH}${encodeURI(
+      parse.title,
+    ).replace(/'/g, '%27')}`,
   }
 }
 

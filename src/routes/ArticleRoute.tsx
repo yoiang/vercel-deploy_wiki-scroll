@@ -1,6 +1,7 @@
 import { Match, Switch, createResource } from 'solid-js'
 import { useLocation, useNavigate, useParams } from '@solidjs/router'
 import AppBar from '../components/AppBar.tsx'
+import appBarStyles from '../components/AppBar.module.css'
 import ArticleBody from '../components/ArticleBody.tsx'
 import { makeSiteId } from '../wiki/catalogue.ts'
 import { getSource } from '../wiki/sources.ts'
@@ -21,9 +22,52 @@ export default function ArticleRoute() {
     (ref) => getSource(ref.siteId).fetchArticle({ pageId: ref.pageId ?? 0, title: ref.title }),
   )
 
+  /**
+   * A real anchor rather than window.open: it is keyboard accessible, and
+   * Capacitor's WebView sends target="_blank" anchors to the system browser,
+   * where a scripted window.open can be swallowed.
+   */
+  const openOnWiki = () => {
+    const loaded = article()
+    if (!loaded) return undefined
+    return (
+      <a
+        class={appBarStyles.trailing}
+        href={loaded.canonicalUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Open ${loaded.title} on the wiki`}
+        title="Open on the wiki"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none">
+          <path
+            d="M14 4h6v6"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path d="M20 4l-8.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path
+            d="M18 14.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.5"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    )
+  }
+
   return (
     <>
-      <AppBar title={title()} leading="back" onLeadingClick={() => navigate(-1)} />
+      <AppBar
+        title={title()}
+        leading="back"
+        onLeadingClick={() => navigate(-1)}
+        trailing={openOnWiki()}
+      />
 
       <Switch>
         <Match when={article.loading}>

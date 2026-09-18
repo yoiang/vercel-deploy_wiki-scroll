@@ -1,5 +1,6 @@
 import { createSignal } from 'solid-js'
-import { families, findSite } from '../wiki/catalogue.ts'
+import { families, findFamily, findSite, makeSiteId } from '../wiki/catalogue.ts'
+import { removeCustomWiki } from '../wiki/customWikis.ts'
 import type { WikiFamily, WikiSite } from '../wiki/catalogueTypes.ts'
 
 export const STORAGE_KEY = 'wiki-scroll.following.v1'
@@ -115,3 +116,22 @@ export function createFollowStore(): FollowStore {
 
 /** The app's one follow store. */
 export const followStore = createFollowStore()
+
+/**
+ * Removes a custom wiki and unfollows every site it contributed.
+ *
+ * Unfollowing first matters: a followed site id pointing at a family that no
+ * longer exists would linger in storage until the next defensive read.
+ *
+ * This lives here rather than in customWikis.ts because that module must not
+ * import the catalogue — catalogue.ts imports it, and the cycle would close.
+ */
+export function removeCustomWikiAndUnfollow(familyId: string): void {
+  const family = findFamily(familyId)
+  if (family) {
+    for (const site of family.sites) {
+      followStore.unfollow(makeSiteId(familyId, site.lang))
+    }
+  }
+  removeCustomWiki(familyId)
+}

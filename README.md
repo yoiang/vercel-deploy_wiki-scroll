@@ -22,6 +22,15 @@ All wiki-specific knowledge lives behind the `WikiSource` interface in
   `npm run update-catalogue` to refresh the Wikimedia families from the
   `sitematrix` API; families you add by hand are left untouched, and sites
   flagged `closed` are skipped.
+- **Add any MediaWiki by URL** from the wikis screen's search field, which
+  doubles as a URL box. The app discovers the site's `api.php`, confirms it is
+  MediaWiki, reads its name and language, and records whether it has the
+  `TextExtracts` and `PageImages` extensions. User-added wikis live in
+  localStorage under `wiki-scroll.customWikis.v1`, not in `catalogue.json`.
+- **One URL is one wiki.** MediaWiki offers no reliable way to enumerate a
+  site's sibling language editions — measured across five real wikis — so
+  `es.example.org` and `en.example.org` are added separately. The evidence is
+  in `docs/superpowers/specs/2026-09-17-custom-wikis-design.md`.
 - **Following** is `src/feed/followStore.ts`, persisted to localStorage under
   `wiki-scroll.following.v1`.
 - **Merging** is `src/wiki/mergedCursor.ts`, which combines one `FeedCursor`

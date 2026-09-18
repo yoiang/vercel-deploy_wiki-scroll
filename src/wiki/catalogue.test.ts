@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it } from 'vitest'
 import {
   families,
   findFamily,
@@ -7,7 +7,10 @@ import {
   parseSiteId,
   searchFamilies,
   searchSites,
+  findSiteByApiUrl,
 } from './catalogue.ts'
+import { addCustomWiki, removeCustomWiki } from './customWikis.ts'
+import type { WikiFamily } from './catalogueTypes.ts'
 
 describe('catalogue data', () => {
   it('contains the seven Wikimedia content families', () => {
@@ -135,5 +138,75 @@ describe('searchFamilies', () => {
 
   it('returns every family for an empty query', () => {
     expect(searchFamilies('')).toHaveLength(families().length)
+  })
+})
+
+const customFamily: WikiFamily = {
+  id: 'custom-deadbeef',
+  name: 'Minecraft Wiki',
+  type: 'mediawiki',
+  apiPath: '/api.php',
+  capabilities: { extracts: true, pageImages: true },
+  custom: true,
+  apiUrl: 'https://minecraft.wiki/api.php',
+  sites: [{ lang: 'en', name: 'English', english: 'English', domain: 'minecraft.wiki' }],
+}
+
+describe('catalogue with custom wikis', () => {
+  afterEach(() => {
+    removeCustomWiki('custom-deadbeef')
+  })
+
+  it('includes a custom wiki in families()', () => {
+    addCustomWiki(customFamily)
+    expect(families().map((f) => f.id)).toContain('custom-deadbeef')
+  })
+
+  it('lists bundled families before custom ones', () => {
+    addCustomWiki(customFamily)
+    const ids = families().map((f) => f.id)
+    expect(ids[0]).toBe('wikipedia')
+    expect(ids[ids.length - 1]).toBe('custom-deadbeef')
+  })
+
+  it('resolves a custom site id', () => {
+    addCustomWiki(customFamily)
+    expect(findSite('custom-deadbeef:en')?.site.domain).toBe('minecraft.wiki')
+  })
+
+  it('finds a custom family by name search', () => {
+    addCustomWiki(customFamily)
+    expect(searchFamilies('minecraft').map((f) => f.id)).toEqual(['custom-deadbeef'])
+  })
+
+  it('drops the custom wiki from all lookups once removed', () => {
+    addCustomWiki(customFamily)
+    removeCustomWiki('custom-deadbeef')
+    expect(families().map((f) => f.id)).not.toContain('custom-deadbeef')
+    expect(findSite('custom-deadbeef:en')).toBeUndefined()
+    expect(searchFamilies('minecraft')).toEqual([])
+  })
+})
+
+describe('findSiteByApiUrl', () => {
+  it('resolves a bundled site from its implied api url', () => {
+    // Bundled families carry no apiUrl; the site's is domain + apiPath.
+    const found = findSiteByApiUrl('https://en.wikipedia.org/w/api.php')
+    expect(found?.family.id).toBe('wikipedia')
+    expect(found?.site.lang).toBe('en')
+  })
+
+  it('resolves a bundled site of another family', () => {
+    expect(findSiteByApiUrl('https://fr.wiktionary.org/w/api.php')?.family.id).toBe('wiktionary')
+  })
+
+  it('resolves a custom site from its stored apiUrl', () => {
+    addCustomWiki(customFamily)
+    expect(findSiteByApiUrl('https://minecraft.wiki/api.php')?.family.id).toBe('custom-deadbeef')
+    removeCustomWiki('custom-deadbeef')
+  })
+
+  it('returns undefined for an unknown url', () => {
+    expect(findSiteByApiUrl('https://nowhere.example/api.php')).toBeUndefined()
   })
 })

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { render } from 'solid-js/web'
 import { MemoryRouter, Route } from '@solidjs/router'
+import AppBar from './components/AppBar.tsx'
 import SettingsRoute from './routes/SettingsRoute.tsx'
 import ArticleCard from './components/ArticleCard.tsx'
 import Drawer from './components/Drawer.tsx'
@@ -108,5 +109,65 @@ describe('articleHref', () => {
         summary: '',
       }),
     ).toBe('/article/wikibooks/en/Cookbook%2FRice')
+  })
+})
+
+describe('app bar trailing action', () => {
+  it('renders a trailing slot when given one', () => {
+    const host = document.createElement('div')
+    document.body.append(host)
+
+    // Built imperatively: this file is .ts, so it cannot contain JSX, and the
+    // vitest include pattern only picks up src/**/*.test.ts.
+    const anchor = document.createElement('a')
+    anchor.href = 'https://minecraft.wiki/w/Anvil'
+    anchor.target = '_blank'
+    anchor.setAttribute('aria-label', 'Open Anvil on the wiki')
+    anchor.textContent = 'icon'
+
+    const dispose = render(
+      () =>
+        MemoryRouter({
+          children: Route({
+            path: '/',
+            component: () =>
+              AppBar({
+                title: 'Anvil',
+                leading: 'back',
+                onLeadingClick: () => {},
+                trailing: anchor,
+              }),
+          }),
+        }),
+      host,
+    )
+
+    const link = host.querySelector('a[aria-label="Open Anvil on the wiki"]')
+    expect(link).not.toBeNull()
+    // Opening in a new tab is the whole point; losing target would silently
+    // navigate away from the app.
+    expect(link?.getAttribute('target')).toBe('_blank')
+    expect(link?.getAttribute('href')).toBe('https://minecraft.wiki/w/Anvil')
+    dispose()
+  })
+
+  it('renders no trailing element when none is given', () => {
+    const host = document.createElement('div')
+    document.body.append(host)
+
+    const dispose = render(
+      () =>
+        MemoryRouter({
+          children: Route({
+            path: '/',
+            component: () =>
+              AppBar({ title: 'Anvil', leading: 'back', onLeadingClick: () => {} }),
+          }),
+        }),
+      host,
+    )
+
+    expect(host.querySelector('header a')).toBeNull()
+    dispose()
   })
 })
